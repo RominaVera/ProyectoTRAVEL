@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #ceab93;
+    padding: 90px 20px 0;
+}
+.header {
+    background-color: #E0D8B0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+
+}
+.navegador {
+    color: black;
+    text-decoration: none;
+
+}
+.Logo {
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+.nav-menu {
+    display: flex;
+    margin-right:  10px;
+    list-style: none;
+}
+.item {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    font-family: 'Roboto Slab', serif;
+}
+.enlase {
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+.enlase:hover {
+    background-color: #FCFFE7;
+    transition: 0.5s;    
+}
+.main .titulo1 {
+    background:url("Avion.jpg");
+    background-position: center;
+    background-size: cover;    
+}
+h3 {
+    background-color: #E0D8B0;
+    width: 50%;
+    padding: 5px;
+    margin: 30px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+.Introducción {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 20px 20px;
+}
+
+.titulo1 {
+    font-family: 'Lobster', cursive;
+    font-weight:unset; 
+    text-align:center;
+    font-size: 40px;
+    padding: 40px 40px 250px 40px;
+    margin: 20px 15px;
+    border-color: black;
+}
+.subtitulo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 16px;
+    list-style: none;
+    border-style: ridge;
+    border-color: #FCFFE7;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-right:  20px;
+    padding: 30px 20px;
+}
+.subtitulo:hover {
+    background-color: #ad8b73;
+    transition: 0.5s;
+}
+.Cuerpo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+
+}
+
+
+.footer {
+    background-color: #E0D8B0;
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px 10px; 
+}
+
+/*
+Comienza hoja de EXPERIENCIA
+}*/
+.titulo-estefi{
+    font-size: 25px;
+    color: #E0D8B0;
+    font-family: 'sans-serif', 'Abril Fatface', 'Lobster' ;
+    text-align: center;
+    text-shadow: #79604f 0.2mm;
+}
+.section-experiencia {
+        max-width: 1200px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+}
+
+.contenedor-estefi a {
+display: inline-block
+}
+
+.contenedor-estefi:hover figure {
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+
+figure{
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    position: relative;
+    transition: all ease .7s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .front, 
+figure .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    transition: all ease .7s;
+}
+
+figure .front {
+    display: block;
+    backface-visibility: hidden;
+}
+
+figure .back {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    font-weight: normal;
+    color: #FCFFE7;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    text-align: center;
+}
+
+figure .back p {
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.footer-estefi {
+    font-size: 18px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FCFFE7;
+    border-radius: 10px;
+
+}
+@media screen and (min-width: 768px) {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: stretch;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+.subtitulo {
+    background-color: #ad8b73;
+
+}
+.subtitulo:hover {
+    background-color: #E0D8B0;
+}
+}
+
