@@ -62,12 +62,17 @@ body {
     background-size: cover;    
 }
 h3 {
-    background-color: #E0D8B0;
-    width: 50%;
+    font-size: 30px;
+    width: 30%;
     padding: 5px;
     margin: 30px auto;
     border-radius: 20px;
-    text-align: center;
+    text-align:center;
+}
+.Conford{
+    margin: 15px 20px;
+    border-radius: 20px;
+
 }
 .Introducción {
     display: inline-flex;
@@ -144,7 +149,7 @@ Comienza hoja de EXPERIENCIA
 }*/
 .titulo-estefi{
     font-size: 25px;
-    color: #E0D8B0;
+    color:black;
     font-family: 'sans-serif', 'Abril Fatface', 'Lobster' ;
     text-align: center;
     text-shadow: #79604f 0.2mm;
