@@ -5,7 +5,7 @@
 }
 body {
     font-family: sans-serif;
-    background-color: #ffc93c;
+    background-color: #ffbbcc;
     padding: 90px 20px 0;
 }
 .header {
@@ -56,7 +56,7 @@ body {
     background-color: #FCFFE7;
     transition: 0.5s;    
 }
-.main .titulo1 {
+.mainro .titulo1 {
     background:url("Avion.jpg");
     background-position: center;
     background-size: cover;    
