@@ -5,11 +5,11 @@
 }
 body {
     font-family: sans-serif;
-    background-color: #ffbbcc;
+    background-color: #1F4690;
     padding: 90px 20px 0;
 }
 .header {
-    background-color: #ffddcc;
+    background-color: #F1F1F1;
     height: 100px;
     position: fixed;
     width: 100%;
@@ -53,7 +53,7 @@ body {
 
 }
 .enlase:hover {
-    background-color: #FCFFE7;
+    background-color: #F1F1F1;
     transition: 0.5s;    
 }
 .mainro .titulo1 {
@@ -62,10 +62,10 @@ body {
     background-size: cover;    
 }
 .tuexperiencia {
-    border: 5px;
-    border-style: double;
-    border-width: thin;
-    border-color: #99154e;
+    margin: 30px 50px;
+    display: inline-block;
+    justify-content: center;
+    
 }
 h3 {
     font-size: 30px;
@@ -76,13 +76,13 @@ h3 {
     text-align:center;
 }
 .Conford{
-    background-color: #99154e;
+    background-color: #8758FF;
     margin: 34px 34px;
     padding: 16px 60px 55px;
     border-radius: 20px;
 }
 .diversion {
-    background-color: #99154e;
+    background-color: #8758FF;
     margin: 34px 34px;
     padding: 16px 60px 55px;
     border-radius: 20px;
@@ -129,7 +129,7 @@ h3 {
     margin: 50px 20px;
 
 }.footer {
-    background-color: #ffddcc;
+    background-color: #F1F1F1;
     display: flex;
     margin: 40px -21px 0;
     padding: 50px 20px;
@@ -292,7 +292,7 @@ body {
 
 }
 .subtitulo:hover {
-    background-color: #E0D8B0;
+    background-color: #F1F1F1;
 }
 }
 
