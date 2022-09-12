@@ -5,11 +5,11 @@
 }
 body {
     font-family: sans-serif;
-    background-color: #1F4690;
+    background-color: #FFE4C4;
     padding: 90px 20px 0;
 }
 .header {
-    background-color: #F1F1F1;
+    background-color: #F5F5F5;
     height: 100px;
     position: fixed;
     width: 100%;
@@ -19,13 +19,13 @@ body {
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 992px;
     margin: 0 auto;
 
 }
 .navegador {
-    color: black;
+    color: #00BFFF;
     text-decoration: none;
 
 }
@@ -53,7 +53,7 @@ body {
 
 }
 .enlase:hover {
-    background-color: #F1F1F1;
+    background-color: #00FFFF;
     transition: 0.5s;    
 }
 .mainro .titulo1 {
@@ -62,41 +62,29 @@ body {
     background-size: cover;    
 }
 .tuexperiencia {
+    font-family: Oswald;
+    font-size: 40px;
     margin: 30px 50px;
     display: inline-block;
-    justify-content: center;
     
 }
 h3 {
-    font-size: 30px;
-    width: 30%;
-    padding: 5px;
-    margin: 30px auto;
-    border-radius: 20px;
-    text-align:center;
-}
-.Conford{
-    background-color: #8758FF;
-    margin: 34px 34px;
-    padding: 16px 60px 55px;
-    border-radius: 20px;
-}
-.diversion {
-    background-color: #8758FF;
-    margin: 34px 34px;
-    padding: 16px 60px 55px;
-    border-radius: 20px;
+    font-family: 'Roboto Condensed', sans-serif;;
+    font-size: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: end;
 }
 .Introducción {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
-    padding: 20px 20px;
+    margin: 90px;
+    padding: 20px 20px;   
 }
-
 .titulo1 {
-    font-family: 'Lobster', cursive;
+    justify-content:'Roboto Condensed', sans-serif;
     font-weight:unset; 
     text-align:center;
     font-size: 40px;
@@ -129,7 +117,7 @@ h3 {
     margin: 50px 20px;
 
 }.footer {
-    background-color: #F1F1F1;
+    background-color: #F5F5F5;
     display: flex;
     margin: 40px -21px 0;
     padding: 50px 20px;
