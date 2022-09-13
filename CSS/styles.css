@@ -16,28 +16,55 @@ body {
     top: 0;
     left: 0%;
 }
-
 .nav {
     display: flex;
     justify-content: space-around;
     max-width: 992px;
     margin: 0 auto;
-
 }
 .navegador {
     color: #00BFFF;
     text-decoration: none;
-
 }
 .Logo {
     font-size: 35px;
     font-weight: bolder;
-
 }
 .nav-menu {
     display: flex;
     margin-right:  10px;
     list-style: none;
+}.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in-out;   
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.slider img {
+    width: 100%;
+}
+@keyframes cambio {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    15% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}    
 }
 .item {
     font-size: 15px;
@@ -50,23 +77,20 @@ body {
 .enlase {
     padding: 8px 12px;
     border-radius: 3px;
-
 }
 .enlase:hover {
     background-color: #00FFFF;
     transition: 0.5s;    
 }
-.mainro .titulo1 {
-    background:url("Avion.jpg");
-    background-position: center;
-    background-size: cover;    
-}
 .tuexperiencia {
     font-family: Oswald;
     font-size: 40px;
     margin: 30px 50px;
-    display: inline-block;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;   
 }
 h3 {
     font-family: 'Roboto Condensed', sans-serif;;
@@ -82,15 +106,6 @@ h3 {
     justify-content:center;
     margin: 90px;
     padding: 20px 20px;   
-}
-.titulo1 {
-    justify-content:'Roboto Condensed', sans-serif;
-    font-weight:unset; 
-    text-align:center;
-    font-size: 40px;
-    padding: 40px 40px 250px 40px;
-    margin: 20px 15px;
-    border-color: black;
 }
 .subtitulo {
     font-family: 'Abril Fatface', cursive;
@@ -115,13 +130,13 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     margin: 50px 20px;
-
-}.footer {
+}
+.footer {
     background-color: #F5F5F5;
-    display: flex;
-    margin: 40px -21px 0;
-    padding: 50px 20px;
     font-family: sans-serif;
+    margin: 20px -21px 0;
+    padding: 50px 20px;
+    display: flex;
 }
 #tabla {
     display: grid;
@@ -164,19 +179,15 @@ Comienza hoja de EXPERIENCIA
         justify-content: space-around;
         align-items: baseline;
 }
-
 .contenedor-estefi a {
 display: inline-block
 }
-
 .contenedor-estefi:hover figure {
     -webkit-transform: perspective(600px) rotateY(180deg);
     -ms-transform: perspective(600px) rotateY(180deg);
     -o-transform: perspective(600px) rotateY(180deg);
-    transform: perspective(600px) rotateY(180deg);
-    
+    transform: perspective(600px) rotateY(180deg);   
 }
-
 figure{
     width: 500px;
     height: 500px;
@@ -186,7 +197,6 @@ figure{
     transform-style: preserve-3d;
     transform: perspective(600px) rotateY(0deg);
 }
-
 figure .front, 
 figure .back {
     width: 100%;
@@ -194,12 +204,10 @@ figure .back {
     border-radius: 7px;
     transition: all ease .7s;
 }
-
 figure .front {
     display: block;
     backface-visibility: hidden;
 }
-
 figure .back {
     position: absolute;
     top: 0;
@@ -211,23 +219,18 @@ figure .back {
     overflow: auto;
     text-align: center;
 }
-
 figure .back p {
     font-size: 14px;
     line-height: 32px;
 }
-
 .footer-estefi {
     font-size: 18px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #FCFFE7;
     border-radius: 10px;
-
 }
-
 /* Comienza hoja Programas */
-
 .main {
     padding-left: 5px;
     padding-right: 5px;
@@ -237,17 +240,14 @@ figure .back p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(199, 183, 165);
 }
-
 .main h1 {
     text-align: center;
 }
-
 .ahref:hover{
     color: rgb(59, 6, 6);
     background-color: beige;
     transition: 0,5s;    
 }
-
 a {
     text-decoration: none;
     color: rgb(59, 6, 6);
@@ -258,12 +258,6 @@ a {
 
 
 
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
 body {
     display: flex;
@@ -271,6 +265,7 @@ body {
     justify-content: end;
     align-items: stretch;
     }
+    
 }
 
 @media screen and (min-width: 1024px) {
