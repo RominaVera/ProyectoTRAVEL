@@ -5,11 +5,11 @@
 }
 body {
     font-family: sans-serif;
-    background-color: #FFE4C4;
+    background-color: #5f0f40;
     padding: 90px 20px 0;
 }
 .header {
-    background-color: #F5F5F5;
+    background-color: #fb8b24;
     height: 100px;
     position: fixed;
     width: 100%;
@@ -23,7 +23,7 @@ body {
     margin: 0 auto;
 }
 .navegador {
-    color: #00BFFF;
+    color: #0f4c5c;
     text-decoration: none;
 }
 .Logo {
@@ -52,6 +52,7 @@ body {
 }
 .slider img {
     width: 100%;
+    
 }
 @keyframes cambio {
     0% {margin-left: 0;}
@@ -79,26 +80,28 @@ body {
     border-radius: 3px;
 }
 .enlase:hover {
-    background-color: #00FFFF;
+    background-color: #e36414;
     transition: 0.5s;    
 }
 .tuexperiencia {
     font-family: Oswald;
+    color: #e36414;
     font-size: 40px;
     margin: 30px 50px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
-    align-items: center;   
+    justify-content:center;
+    align-items:center;   
 }
 h3 {
-    font-family: 'Roboto Condensed', sans-serif;;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
     margin: 5px;
     display: flex;
-    justify-content: end;
+    justify-content: end;   
 }
+
 .Introducción {
     display: inline-flex;
     flex-direction: row;
@@ -112,7 +115,7 @@ h3 {
     font-size: 16px;
     list-style: none;
     border-style: ridge;
-    border-color: #FCFFE7;
+    border-color: #0f4c5c;
     border-radius: 5px;
     display: inline-block;
     text-align: center;
@@ -120,7 +123,7 @@ h3 {
     padding: 30px 20px;
 }
 .subtitulo:hover {
-    background-color: #ad8b73;
+    background-color: #9a031e;
     transition: 0.5s;
 }
 .Cuerpo {
@@ -132,7 +135,7 @@ h3 {
     margin: 50px 20px;
 }
 .footer {
-    background-color: #F5F5F5;
+    background-color: #fb8b24;
     font-family: sans-serif;
     margin: 20px -21px 0;
     padding: 50px 20px;
@@ -271,11 +274,11 @@ body {
 @media screen and (min-width: 1024px) {
 
 .subtitulo {
-    background-color: #ad8b73;
+    background-color: #0f4c5c;
 
 }
 .subtitulo:hover {
-    background-color: #F1F1F1;
+    background-color: #9a031e;
 }
 }
 
