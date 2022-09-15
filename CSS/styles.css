@@ -229,39 +229,76 @@ figure .back {
 figure .back p {
     font-size: 14px;
     line-height: 32px;
-}/*
-.footer-estefi {
-    font-size: 18px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #FCFFE7;
-    border-radius: 10px;
-}*/
+}
 /* Comienza hoja Programas */
+
 .main {
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 150px;
     padding-bottom: 80px;
-    color: rgb(59, 6, 6);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(199, 183, 165);
+    font-family: 'Quicksand', sans-serif;
+    background-color: lightblue ;
 }
+
 .main h1 {
     text-align: center;
+    color: rgb(117, 12, 215);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
+
 .ahref:hover{
-    color: rgb(59, 6, 6);
-    background-color: beige;
-    transition: 0,5s;    
+    color: rgb(117, 12, 215);
+    background-color: rgba(240, 6, 240, 0.3);
+    transition: 0,5s; 
+    border-radius: 10px;
 }
+
 a {
     text-decoration: none;
-    color: rgb(59, 6, 6);
+    color: rgb(117, 12, 215);
 }
+
+h2 {
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
 .image {
-    width: 100%;
+    width: 90%;
+    align-content: center;
+    border: 5px rgb(117, 12, 215) solid;
+    border-radius: 10%;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
 }
+
+.text {
+    font-size: 20px;font-weight: bold;
+    border: 5px rgb(117, 12, 215) solid;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 30px;
+    border-radius: 10%;
+    background-color: white;
+    color: rgb(240, 6, 240);
+    box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
+    text-align: justify;
+}
+
+
 
 
 
@@ -272,7 +309,16 @@ body {
     justify-content: end;
     align-items: stretch;
     }
-    
+    .image {
+        margin-left: 10%;
+        margin-right: 10%;
+        align-content: center;
+        width: 80%;
+    }
+    .text {
+        border-radius: 15%;
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,6 +326,27 @@ body {
 
 .subtitulo:hover {
     background-color: rgb(0, 204, 255);
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image {
+    width: 29%;
+    align-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.text {
+    font-size: 24px;
 }
 }
 
