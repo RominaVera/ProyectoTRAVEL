@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\contacto.css">
+    <title>Contacto|TRAVEL</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+   
+    <div class="contenido">
+
+        <h1 class="logo">Contactanos</h1>
+        
+
+        <div class="div-form">
+            <div class="caja-form">  <!--formulario------------------------>
+                <h3>¡Habla con nosotros!</h3>
+                <h6>Completa el formulario o escribinos al Whatsapp o E-mail</h6>
+                <form action="">  
+                    <p>
+                        <label for="nombre y apellido">Nombre y Apellido</label>
+                        <input type="text" name="nombre y apellido" required>
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad</label>
+                        <input type="number" name="edad" max="30" min="15" required>
+                    </p>
+                    <p>
+                        <label for="celular">Celular</label>
+                        <input type="tel" name="celular" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="programa de interes">Programa de interés</label>
+                        <select required>
+                            <option disabled selected="">Seleccione un programa</option>
+                            <option>Intercambio estudiantil</option>
+                            <option>Voluntariado +18</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="fecha de viaje">¿Cuándo desea viajar?</label>
+                        <input type="date" name="fecha de viaje" required>
+                    </p>
+
+                    <p class="mensaje">
+                    <label for="message">Mensaje</label> 
+                        <textarea name="message" rows="6" cols="4" ></textarea required> 
+                    </p>
+
+                    <p class="p-label-checbox">
+                        <label for="checkbox"><strong>Acepto recibir novedades</strong></label>
+                        <input type="checkbox" id="checkbox">
+                    </p>
+                    
+                    <p class="p-button">
+                        <button type="submit" class="envia">Enviar</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="info"> <!--datos-------------------------->
+                <h4>Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>  Rosales 114, Río Grande</li>
+                    <li><i class="fas fa-phone"></i> (+54)02964-565556</li>
+                    <li><i class="fas fa-envelope-open-text"></i> <a href="mailto:travelviajes@gmail.com" class="email-datos">travelviajes@gmail.com</a></li>
+                    <li><strong> Horario de atención:</strong> Lunes a Viernes, de 10:00 a 18:00 hs. </li>
+                </ul>
+                <p>¡Destinados a brindarte lo mejor de lo mejor en materia de felicidad!</p> 
+                <h5>Tu oficina más cercana</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.0974732829104!2d-67.69701608419433!3d-53.787752680073915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4b165bedf0ae8b%3A0x20abe533b2537f89!2sC.%20Leonardo%20Rosales%20114%2C%20R%C3%ADo%20Grande%2C%20Tierra%20del%20Fuego!5e0!3m2!1ses-419!2sar!4v1662916845636!5m2!1ses-419!2sar" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div id="tabla">
+            <div class="box1">
+            <a class="box1-item1" href="#"><img src="IMAGENES\facebook.png" alt="facebook" width="40px" height="40px"/></a>
+                <a class="box1-item2" href="#"><img src="IMAGENES\instagram.png" alt="instagram" width="40px" height="40px"/></a>
+                <a class="box1-item3" href="#"><img src="IMAGENES\whatsapp.png" alt="whatsapp" width="40px" height="40px"/></a>
+            </div>
+            <div class="box2">
+                <h5>ESTAS INTERESADO, CONTACTANOS.</h5><br>
+                <a class="contactos" href="#">travelviajes@gmail.com</a><br><br>
+                <a class="contactos" href="#">Tel: 2964-565556</a><br><br>
+                <a class="contactos" href="#">Direccion: Rosales 114, Rio Grande TDF</a>
+            </div>
+            <div class="box3">
+                <h5>OBTENE EL MEJOR PRECIO HOY</h5><br>
+                <p>Presupuestos, descuentos y/o promociones seran otorgados con fecha de vencimiento, se fijara monto mediante seña pactada. <br>
+                El uso de este sitio web implica la aceptación de los Términos y condiciones y de las Políticas Privacidad de TravelSale 2022.</p>
+            </div>
+        </div>
+    </footer>  
+    
+</body>
+</html>

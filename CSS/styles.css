@@ -8,6 +8,7 @@ body {
     background-color: #fff ;
     padding: 90px 20px 0;
 }
+
 .header {
     background-color: rgb(240, 6, 240);
     height: 100px;
@@ -34,7 +35,9 @@ body {
     display: flex;
     margin-right:  10px;
     list-style: none;
-}.slider {
+}
+/*--------------hasta aca barra de navegacion-------------------*/
+.slider {
     width: 95%;
     margin: auto;
     overflow: hidden;
@@ -138,6 +141,7 @@ h3 {
     align-items: center;
     margin: 50px 20px;
 }
+/*---------------comienza footer------------------*/
 .footer {
     background-image: url(fondomundo.png);
     background-repeat: repeat;
@@ -167,9 +171,7 @@ h3 {
 .contactos {
     text-decoration: none;
 }
-/*
-Comienza hoja de EXPERIENCIA
-}*/
+/*------------------------Comienza hoja de EXPERIENCIA---------------------------*/
 .titulo-estefi{
     font-size: 25px;
     color:black;
@@ -230,7 +232,7 @@ figure .back p {
     font-size: 14px;
     line-height: 32px;
 }
-/* Comienza hoja Programas */
+/*------------------------------ Comienza hoja Programas------------------------------ */
 
 .main {
     padding-left: 5px;
@@ -300,8 +302,6 @@ h2 {
 
 
 
-
-
 @media screen and (min-width: 768px) {
 body {
     display: flex;
@@ -319,10 +319,8 @@ body {
         border-radius: 15%;
         font-size: 22px;
     }
-}
 
 @media screen and (min-width: 1024px) {
-
 
 .subtitulo:hover {
     background-color: rgb(0, 204, 255);
@@ -350,3 +348,9 @@ body {
 }
 }
 
+
+::selection{  /*para seleccionar*/
+    background-color: rgb(117, 12, 215);
+    color: #fff;
+}
+}
