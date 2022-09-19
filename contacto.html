@@ -7,20 +7,44 @@
     <link rel="stylesheet" href="CSS\contacto.css">
     <title>Contacto|TRAVEL</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
 </head>
 <body>
+
+    <header class="header">
+        <img class="logo"  src="IMAGENES\logo.jpg" width="100px" alt="Logo Travel">
+        <nav class="nav">
+            <ul class="nav-link">
+                <div class="flex">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link">Inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="index-vicky.html" class="nav-menu-link">Nuestros programas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="experiencia.html" class="nav-menu-link">Experiencias</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link">Contacto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="nosotros.html" class="nav-menu-link">Sobre Nosotros</a>
+                </li></div>
+            </ul>
+        </nav>
+        </header>
    
     <div class="contenido">
 
-        <h1 class="logo">Contactanos</h1>
+        <h1 class="logo1">Contactanos</h1>
         
-
+    
         <div class="div-form">
             <div class="caja-form">  <!--formulario------------------------>
                 <h3>¡Habla con nosotros!</h3>
                 <h6>Completa el formulario o escribinos al Whatsapp o E-mail</h6>
-                <form action="">  
+                <form action="formulario.php" method="post">  
                     <p>
                         <label for="nombre y apellido">Nombre y Apellido</label>
                         <input type="text" name="nombre y apellido" required>
@@ -67,7 +91,7 @@
                     </p>
                 </form>
             </div>
-
+    
             <div class="info"> <!--datos-------------------------->
                 <h4>Contacto</h4>
                 <ul>
@@ -86,20 +110,20 @@
     <footer class="footer">
         <div id="tabla">
             <div class="box1">
-            <a class="box1-item1" href="#"><img src="IMAGENES\facebook.png" alt="facebook" width="40px" height="40px"/></a>
-                <a class="box1-item2" href="#"><img src="IMAGENES\instagram.png" alt="instagram" width="40px" height="40px"/></a>
-                <a class="box1-item3" href="#"><img src="IMAGENES\whatsapp.png" alt="whatsapp" width="40px" height="40px"/></a>
+                <a class="box1-item1" href="https://es-la.facebook.com/"><img src="IMAGENES\facebook.png" alt="facebook" width="40px" height="40px"/></a>
+                <a class="box1-item2" href="https://www.instagram.com/accounts/login/"><img src="IMAGENES\instagram.png" alt="instagram" width="40px" height="40px"/></a>
+                <a class="box1-item3" href="https://www.whatsapp.com/?lang=es"><img src="IMAGENES\whatsapp.png" alt="whatsapp" width="40px" height="40px"/></a>
             </div>
             <div class="box2">
-                <h5>ESTAS INTERESADO, CONTACTANOS.</h5><br>
-                <a class="contactos" href="#">travelviajes@gmail.com</a><br><br>
-                <a class="contactos" href="#">Tel: 2964-565556</a><br><br>
-                <a class="contactos" href="#">Direccion: Rosales 114, Rio Grande TDF</a>
+                <h5>SI ESTAS INTERESADO, CONTACTANOS.</h5>
+                <a class="contactos" href="https://travelviajes.com.ar/">travelviajes@gmail.com</a><br><br>
+                <a class="contactos" href="https://travelviajes.com.ar/">Tel: 2964-565556</a><br><br>
+                <a class="contactos" href="https://travelviajes.com.ar/">Dirección: Rosales 114, Río Grande TDF</a>
             </div>
             <div class="box3">
-                <h5>OBTENE EL MEJOR PRECIO HOY</h5><br>
-                <p>Presupuestos, descuentos y/o promociones seran otorgados con fecha de vencimiento, se fijara monto mediante seña pactada. <br>
-                El uso de este sitio web implica la aceptación de los Términos y condiciones y de las Políticas Privacidad de TravelSale 2022.</p>
+                <h5>OBTENE EL MEJOR PRECIO HOY</h5>
+                <p class="box3">Presupuestos, descuentos y/o promociones seran otorgados con fecha de vencimiento, se fijará monto mediante seña pactada. <br>
+                El uso de este sitio web implica la aceptación de los Términos y condiciones y de las Políticas de Privacidad de TravelSale 2022.</p>
             </div>
         </div>
     </footer>  

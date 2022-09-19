@@ -6,36 +6,76 @@
 body {
     font-family: sans-serif;
     background-color: #fff ;
-    padding: 90px 20px 0;
+    padding: 90px 0px 0;
 }
+
+
 
 .header {
     background-color: rgb(240, 6, 240);
-    height: 100px;
     position: fixed;
+    height: 140px;
     width: 100%;
     top: 0;
-    left: 0%;
+    left: 0;
+    z-index: 10;
+}
+.logo {
+    padding-top: 8px;
+    padding-right: 5px;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 .nav {
     display: flex;
-    justify-content: space-around;
-    max-width: 992px;
-    margin: 0 auto;
+    list-style: none;
+    margin-left: 75px;
+    padding: 5px 0;
+    float:right;
+    max-width: 1100px;
+    margin: auto;
 }
-.navegador {
+.nav-link {
+    
     color: rgb(117, 12, 215);
     text-decoration: none;
-}
-.Logo {
-    font-size: 35px;
-    font-weight: bolder;
-}
-.nav-menu {
     display: flex;
-    margin-right:  10px;
+    margin-right: 40px;
     list-style: none;
 }
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu-item {
+    
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 25px;
+    text-transform: uppercase;
+    width: max-content;
+    display: inline-block;
+}
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(117, 12, 215);
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bolder;
+    
+}
+.nav-menu-link:hover {
+    background-color: rgb(117, 12, 215, 0.3);
+    transition: 0,5s;
+}
+.contactos:hover {
+    background-color: rgb(117, 12, 215, 0.3);
+    border-radius: 10px;
+    transition: 0,5s;
+}
+
 /*--------------hasta aca barra de navegacion-------------------*/
 .slider {
     width: 95%;
@@ -130,7 +170,7 @@ h3 {
     padding: 30px 20px;
 }
 .subtitulo:hover {
-    background-color:  rgb(117, 12, 215);
+    background-color:  rgba(117, 12, 215, 0.6);
     transition: 0.5s;
 }
 .Cuerpo {
@@ -142,39 +182,56 @@ h3 {
     margin: 50px 20px;
 }
 /*---------------comienza footer------------------*/
+
+
 .footer {
     background-image: url(fondomundo.png);
     background-repeat: repeat;
-    margin: 20px -21px 0;
-    padding: 50px 20px;
     display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(117, 12, 215);
+    margin: 0;
 }
 #tabla {
     display: grid;
     grid-template-areas:
     "box1 box2 box3";
-    grid-template-columns: 0,5fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-column-gap: 15px;
 }
 .box1 {
-    grid-area: box1;
+    padding-left: 20px;
+    padding-top: 20px;
 }
-.box2{
-    grid-area: box2;
+.box1-item1 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.box3{
-    grid-area: box3;
+.box1-item2 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.box1 a:nth-child(1n){
-    padding: 10px 10px;
-    margin: 5px;
+.box1-item3 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .contactos {
     text-decoration: none;
+    color: rgb(117, 12, 215);
 }
+
+
 /*------------------------Comienza hoja de EXPERIENCIA---------------------------*/
+
+main {
+    margin-top: 130px;
+}
 .titulo-estefi{
     font-size: 25px;
-    color:black;
+    color: rgb(240, 6, 240);
     font-family: 'sans-serif', 'Abril Fatface', 'Lobster' ;
     text-align: center;
     text-shadow: #79604f 0.2mm;
@@ -222,7 +279,7 @@ figure .back {
     top: 0;
     padding: 20px;
     font-weight: normal;
-    color: #FCFFE7;
+    color: rgb(117, 12, 215);
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
     overflow: auto;
@@ -232,12 +289,16 @@ figure .back p {
     font-size: 14px;
     line-height: 32px;
 }
+
+
+
 /*------------------------------ Comienza hoja Programas------------------------------ */
 
 .main {
+    margin-top: auto;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top: 150px;
+    padding-top: 130px;
     padding-bottom: 80px;
     font-family: 'Quicksand', sans-serif;
     background-color: lightblue ;
@@ -348,9 +409,10 @@ body {
 }
 }
 
+}
 
 ::selection{  /*para seleccionar*/
     background-color: rgb(117, 12, 215);
     color: #fff;
-}
+
 }
