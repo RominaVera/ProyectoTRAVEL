@@ -21,10 +21,10 @@ body {
     z-index: 10;
 }
 .logo {
-    padding-top: 8px;
-    padding-right: 5px;
+    padding-top: 2px;
+    padding-right: 15px;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 2px;
 }
 .nav {
     display: flex;
