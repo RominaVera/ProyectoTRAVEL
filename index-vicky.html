@@ -95,7 +95,17 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        let nombre = prompt("¡BIENVENIDO/A A TRAVEL! ¿Cómo te llamas?")
+        let edad = parseInt(prompt("Ingresa por favor tu edad"));
+        if(edad<12){
+        alert("Hola " + nombre + "! No hay programas adecuados a tu edad")
+        }else if(edad>=12 && edad<=18){
+        alert("Hola " + nombre + "! El programa adecuado a tu edad es el de intercambio estudiantil, más información en esta página")
+        }else{
+        alert("Hola " + nombre + "! El programa adecuado a tu edad es el de Voluntariado para mayores de 18 años, más información en esta página")
+        }
+    </script>
 
 </body>
 </html>

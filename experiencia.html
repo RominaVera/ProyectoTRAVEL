@@ -135,7 +135,7 @@
                             <br>
                             <p>
                                 Hola, Soy juan. Soy de Sgo del Estero pero hace exactamente ya 5 meses que estoy viviendo en Nepal, participando de un intercambio estudiantil durante un año.
-                                Les resumo cómo llegue hasta acá: Todo empezó cuando una amiga, que también está de intercambio (@er453muk gracias x la idea❤️) me contó sobre YFU y lo que ella iba a hacer. 
+                                Les resumo cómo llegue hasta acá: Todo empezó cuando una amiga, que también está de intercambio (@er453muk gracias x la idea❤️) me contó sobre Travel y lo que ella iba a hacer. 
                                 Me entro la curiosidad, ni lo dudé y comencé con los trámites. Tenía muchas ganas de cambiar de aires, de buscar lugares, relaciones nuevas y sobre todo crecer.
                                 Me gusto muchísimo la idea y el concepto de hacer un intercambio y es por eso que estuve siempre firme con mi decisión.
                                 <br>#travelargentina #intercamboxelmundo #experienciasunicas
@@ -166,7 +166,29 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        alert("¿Te interesa descubrir cuál es el destino que se acerca a tus gustos? Podes responder las siguientes preguntas y te asesoramos");
+
+let preg1 = prompt("Qué preferís para vacacionar: 1) Una playa; 2) La montaña; 3) Un bosque");
+let preg2 = prompt("Con quienes te gustaría compartir las vacaciones: 1) Amigos; 2) Pareja; 3) Familia");
+let preg3 = prompt("Cómo te gusta divertirte: 1) Salir a bailar; 2) Salir a cenar; 3) una reunión con amigos");
+
+let p1 = parseInt(preg1);
+let p2 = parseInt(preg2);
+let p3 = parseInt(preg3);
+let resultado = p1 + p2 + p3;
+
+if (resultado <=3) {
+    alert("Los destinos recomendados son México o España");
+}
+    else if (resultado >3 && resultado <=6) {
+        alert("El destino recomendado es Nepal");
+    }
+    else {
+        alert("El destino recomendado es Rusia");
+    }
+    alert("Mira las experiencias de otros viajeros en esta página");
+    </script>
     
 </body>
 </html>
