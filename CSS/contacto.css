@@ -1,4 +1,9 @@
 *{
+    
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -31,68 +36,49 @@ body{
     padding: 1em;
 }
 
-.header {
-    background-color: rgb(240, 6, 240);
-    position: fixed;
-    height: 160px;
+nav {
+    background:rgb(240, 6, 240);
+    height: 80px;
     width: 100%;
-    top: 0;
-    left: 0;
 }
-.logo {
-    padding-top: 2px;
-    padding-right: 15px;
-    margin-left: 30px;
-    margin-top: 2px;
+.enlacee {
+    position: absolute;
+    padding: 10px 60px;
 }
-.nav {
-    display: flex;
-    list-style: none;
-    margin-left: 75px;
-    padding: 5px 0;
-    float:right;
-    max-width: 1100px;
-    margin: auto;
+.logo{
+    height: 60px;
 }
-.nav-link {
-    font-family: sans-serif;
-    color: rgb(117, 12, 215);
-    text-decoration: none;
-    display: flex;
-    
-    margin-right: 40px;
-    list-style: none;
+nav ul {
+    float: right;
+    margin-right: 20px;
 }
-.flex {
-    display: flex;
-    flex-direction: row;
-}
-.nav-menu-item {
-    
-    font-size: 20px;
-    margin: 0 10px;
-    line-height: 25px;
-    text-transform: uppercase;
-    width: max-content;
+nav ul li {
     display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
-.nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: rgb(117, 12, 215);
-    font-family: sans-serif;
-    font-size: medium;
-    font-weight: bolder;
+nav ul li a {
+    color: #750cd7;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
-.nav-menu-link:hover {
-    background-color: rgb(117, 12, 215, 0.3);
-    transition: 0,5s;
+li a.active, li a:hover {
+    background: rgb(117, 12, 215, 0.3);
+    transition: .3s;
 }
-.contactos:hover {
-    background-color: rgb(117, 12, 215, 0.3);
-    border-radius: 10px;
-    transition: 0,5s;
+.checkbtn {
+    font-size: 30px;
+    color: #750cd7;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
 }
 
 /*-------------------------------------------------------------------FORMULARIO-------------------------------------------------------------------*/
