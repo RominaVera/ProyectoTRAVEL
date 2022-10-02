@@ -9,12 +9,13 @@
 
 ::selection{  /*para seleccionar*/
     background-color: rgb(117, 12, 215);
-    color: #fff;
+    color: rgb(240, 6, 240);
 }
 
 
 body{
-    color: #fff;
+    color: rgb(240, 6, 240);
+    font-size: 20px;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
     padding: 0 1.5em;  /*em= medidas relativas->va a interpretar el navegador*/
@@ -92,7 +93,7 @@ li a.active, li a:hover {
 }
 
 .caja-form{
-    background: #E4D1B9;
+    background: #e4d1b9;
 }
 
 form{
@@ -102,7 +103,7 @@ form{
 
 form label{
     display: block;
-    color: #fff;
+    color: rgb(117, 12, 215);
 }
 
 form p{
@@ -121,7 +122,7 @@ button,input,textarea{
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
+    color: rgb(117, 12, 215);
     border-bottom: 2px solid rgba(190, 41, 190, 0.789);
     font-size: 16px;
     background: rgba(8, 8, 8, 0.06);
@@ -134,7 +135,7 @@ select{ /*es desplegable de opciones*/
     appearance: none;
     border-bottom: 2px solid rgba(190, 41, 190, 0.789);
     background-color: transparent;
-    color: #fff;
+    color: rgb(117, 12, 215);
     font-size: 16px;
     background: rgba(8, 8, 8, 0.06);
 } 
@@ -145,8 +146,8 @@ select:focus{
 }
 
 option{ /*las option del desplegable*/
-    background-color:#C2B092;
-    color: #fff;
+    background-color:rgb(240, 6, 240);
+    color: rgb(240, 6, 240);
 }
 
 .checkbox{
@@ -173,7 +174,7 @@ label{
 }
 
 .email-datos{ /*para el color del link del mail*/
-    color: #fff;
+    color: rgb(240, 6, 240);
     text-decoration: none; /*para sacar el subrayado*/
 }
 
@@ -196,7 +197,7 @@ textarea{
 .caja-form form button:hover,
 .caja-form form button:focus { /*enviar focus cuando activo, hover por encima*/
     background: rgb(117, 12, 215);
-    color: #fff;
+    color: rgb(240, 6, 240);
     outline: 0;
 }
 
