@@ -1,5 +1,4 @@
-*{
-    
+*{ 
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -312,7 +311,7 @@ h6{
 @media (max-width: 999px) {
 
     body{
-        padding: 0 4em;
+        padding: 0;
     }
 
     .logo1, span {
@@ -346,7 +345,7 @@ h6{
 @media (min-width: 1000px) {
 
     body{
-        padding: 0 4em;
+        padding: 0;
     }
 
     .div-form{
@@ -369,7 +368,7 @@ h6{
 @media (min-width: 1100px) {
 
     body{
-        padding: 0 4em;
+        padding: 0;
     }
 
     .div-form{
@@ -393,7 +392,7 @@ h6{
 @media (min-width: 1200px) {
 
     body{
-        padding: 0 4em;
+        padding: 0;
     }
 
     .div-form{
@@ -411,3 +410,42 @@ h6{
     text-align: left;
     }
 }
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 204, 255);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #750cd7;
+    } 
+    #check:checked ~ ul {
+        left: 0;
+    }
+    }
