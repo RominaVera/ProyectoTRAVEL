@@ -4,7 +4,9 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
+
 nav {
     background:rgb(240, 6, 240);
     height: 80px;
@@ -28,7 +30,7 @@ nav ul li {
 }
 nav ul li a {
     color: #750cd7;
-    font-size: 18px;
+    font-size: 25px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -86,7 +88,7 @@ li a.active, li a:hover {
 }
 
 .item {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
@@ -97,35 +99,39 @@ li a.active, li a:hover {
     font-family: Oswald;
     color: rgb(240, 6, 240);
     box-shadow: 3px 8px 5px 5px black;
-    font-size: 40px;
+    font-size: 45px;
     margin: 30px 50px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content:center;
-    align-items:center;   
+    align-items:center;
+    flex-direction: column;   
 }
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(117, 12, 215);
     text-shadow: 6px 10px 5px rgb(240, 6, 240);;
-    font-size: 50px;
+    font-size: 55px;
     margin: 5px;
     display: flex;
     justify-content: end;   
 }
 
 .Introducción {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin: 90px;
-    padding: 20px 20px;   
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 90px 23%;
+    padding: 20px 20px;
+    align-content: center;
+    align-items: stretch;
+    
 }
 .subtitulo {
     font-family: 'Abril Fatface', cursive;
-    font-size: 16px;
+    font-size: 21px;
     list-style: none;
     border-style: ridge;
     border-color: rgb(117, 12, 215);
@@ -160,6 +166,7 @@ h3 {
     padding: 20px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(117, 12, 215);
+    font-size: 33px;
     margin: 0;
 }
 #tabla {
@@ -194,7 +201,7 @@ h3 {
 /*------------------------Comienza hoja de EXPERIENCIA---------------------------*/
 
 .titulo-estefi{
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(240, 6, 240);
     font-family: 'sans-serif', 'Abril Fatface', 'Lobster' ;
     text-align: center;
@@ -251,7 +258,7 @@ figure .back {
     text-align: center;
 }
 figure .back p {
-    font-size: 14px;
+    font-size: 19px;
     line-height: 32px;
 }
 
@@ -273,7 +280,7 @@ figure .back p {
     text-align: center;
     color: rgb(117, 12, 215);
     font-family: 'Quicksand', sans-serif;
-    font-size: 80px;
+    font-size: 85px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
@@ -314,7 +321,7 @@ h2 {
 }
 
 .text {
-    font-size: 20px;font-weight: bold;
+    font-size: 25px;font-weight: bold;
     border: 5px rgb(117, 12, 215) solid;
     margin-left: 35px;
     margin-right: 35px;
@@ -348,7 +355,7 @@ h2 {
         line-height: 20px;
     }
     nav ul li a{
-        font-size: 15px;
+        font-size: 20px;
     }
     li a:hover, li a.active{
         background: none;
@@ -368,13 +375,13 @@ h2 {
         padding-left: 20px;
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: 19px;
     }
 }
 
     @media screen and (min-width: 1024px) {
-
-    .subtitulo:hover {
+    
+        .subtitulo:hover {
         background-color: rgb(0, 204, 255);
     }
         
@@ -395,89 +402,6 @@ h2 {
     margin-right: 15px;
 }
 .text {
-    font-size: 24px;
-}
-}
-
-/*
-@media screen and (min-width: 768px) {
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: stretch;
-    }
-    .image {
-        margin-left: 10%;
-        margin-right: 10%;
-        align-content: center;
-        width: 80%;
-    }
-    .text {
-        border-radius: 15%;
-        font-size: 22px;     
-}
-.checkbtn {
-    display: block;
-}
-ul {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 204, 255);
-    top: 80px;
-    left: 100%;
-    text-align: center;
-    transition: all .5s;
-}
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 20px;
-}
-nav ul li a{
-    font-size: 15px;
-}
-li a:hover, li a.active{
-    background: none;
-    color: #750cd7;
-} 
-#check:checked ~ ul {
-    left: 0;
-}
-}
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-.subtitulo:hover {
-    background-color: rgb(0, 204, 255);
-}
-.flex {
-    display: flex;
-    flex-direction: row;
-}
-
-.imagenes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.image {
-    width: 29%;
-    align-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.text {
-    font-size: 24px;
+    font-size: 29px;
 }
 }
