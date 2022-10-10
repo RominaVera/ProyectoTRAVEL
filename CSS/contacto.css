@@ -38,7 +38,7 @@ body{
 
 nav {
     background:rgb(240, 6, 240);
-    height: 80px;
+    height: 130px;
     width: 100%;
 }
 .enlacee {
@@ -46,7 +46,7 @@ nav {
     padding: 10px 60px;
 }
 .logo{
-    height: 60px;
+    height: 100px;
 }
 nav ul {
     float: right;
@@ -54,12 +54,12 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    line-height: 100px;
+    margin: 0 10px;
 }
 nav ul li a {
     color: #750cd7;
-    font-size: 18px;
+    font-size: 25px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -262,7 +262,6 @@ h6{
     color: rgb(117, 12, 215);
     margin-left: 0px;
     margin-right: 0px;
-    
 }
 #tabla {
     display: grid;
@@ -413,7 +412,7 @@ h6{
 
 @media (max-width: 952px){
     .enlace{
-        padding-left: 20px;
+        padding-left: 10px;
     }
     nav ul li a {
         font-size: 14px;
