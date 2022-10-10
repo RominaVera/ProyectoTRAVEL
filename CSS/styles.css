@@ -3,10 +3,8 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
-
 nav {
     background:rgb(240, 6, 240);
     height: 120px;
@@ -51,7 +49,6 @@ li a.active, li a:hover {
 #check {
     display: none;
 }
-
 /*--------------hasta aca barra de navegacion-------------------*/
 .slider {
     width: 95%;
@@ -70,8 +67,7 @@ li a.active, li a:hover {
     list-style: none;
 }
 .slider img {
-    width: 100%;
-    
+    width: 100%;   
 }
 @keyframes cambio {
     0% {margin-left: 0;}
@@ -86,7 +82,6 @@ li a.active, li a:hover {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}    
 }
-
 .item {
     font-size: 20px;
     margin: 0 10px;
@@ -95,29 +90,31 @@ li a.active, li a:hover {
     width: max-content;
     font-family: 'Roboto Slab', serif;
 }
+.diversion{
+    margin-left: 15px 15px;
+}
 .tuexperiencia {
     font-family: Oswald;
     color: rgb(240, 6, 240);
     box-shadow: 3px 8px 5px 5px black;
-    font-size: 45px;
-    margin: 30px 50px;
+    font-size: 55px;
+    margin: 40px 60px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content:center;
     align-items:center;
-    flex-direction: column;   
+    flex-direction: column;     
 }
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(117, 12, 215);
     text-shadow: 6px 10px 5px rgb(240, 6, 240);;
-    font-size: 55px;
-    margin: 5px;
+    font-size: 75px;
+    margin: 25px;
     display: flex;
     justify-content: end;   
 }
-
 .Introducción {
     display: inline-block;
     flex-direction: column;
@@ -126,12 +123,11 @@ h3 {
     margin: 90px 23%;
     padding: 20px 20px;
     align-content: center;
-    align-items: stretch;
-    
+    align-items: stretch;  
 }
 .subtitulo {
     font-family: 'Abril Fatface', cursive;
-    font-size: 21px;
+    font-size: 25px;
     list-style: none;
     border-style: ridge;
     border-color: rgb(117, 12, 215);
@@ -140,7 +136,7 @@ h3 {
     display: inline-block;
     text-align: center;
     margin-right:  20px;
-    padding: 30px 20px;
+    padding: 50px 80px;
 }
 .subtitulo:hover {
     background-color:  rgba(117, 12, 215, 0.6);
@@ -152,11 +148,9 @@ h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin: 50px 20px;
+    margin: 80px 20px;
 }
 /*---------------comienza footer------------------*/
-
-
 .footer {
     background-image: url(fondomundo.png);
     background-repeat: repeat;
@@ -196,16 +190,25 @@ h3 {
     text-decoration: none;
     color: rgb(117, 12, 215);
 }
-
-
 /*------------------------Comienza hoja de EXPERIENCIA---------------------------*/
-
+.foto.portada.estefi{
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    align-items:center;
+}
 .titulo-estefi{
-    font-size: 35px;
+    font-family: Oswald;
     color: rgb(240, 6, 240);
-    font-family: 'sans-serif', 'Abril Fatface', 'Lobster' ;
-    text-align: center;
-    text-shadow: #79604f 0.2mm;
+    box-shadow: 3px 8px 5px 5px black;
+    font-size: 55px;
+    margin: 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column; 
 }
 .section-experiencia {
         max-width: 1200px;
@@ -217,7 +220,7 @@ h3 {
         align-items: baseline;
 }
 .contenedor-estefi a {
-display: inline-block
+    display: inline-block;
 }
 .contenedor-estefi:hover figure {
     -webkit-transform: perspective(600px) rotateY(180deg);
@@ -285,30 +288,25 @@ figure .back p {
     padding-bottom: 20px;
     margin-bottom: 40px;
 }
-
 .ahref:hover{
     color: rgb(117, 12, 215);
     background-color: rgba(240, 6, 240, 0.3);
     transition: 0,5s; 
     border-radius: 10px;
 }
-
 a {
     text-decoration: none;
     color: rgb(117, 12, 215);
 }
-
 h2 {
     text-align: center;
 }
-
 .imagenes {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 30px;
 }
-
 .image {
     width: 90%;
     align-content: center;
@@ -319,7 +317,6 @@ h2 {
     margin-top: 30px;
     box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
 }
-
 .text {
     font-size: 25px;font-weight: bold;
     border: 5px rgb(117, 12, 215) solid;
@@ -332,9 +329,6 @@ h2 {
     box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
     text-align: justify;
 }
-
-
-
 @media (max-width: 768px){
     .checkbtn {
         display: block;
@@ -367,24 +361,19 @@ h2 {
     .slider{
         display: none;
     }
-    }
-    
-
+}
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px;
     }
     nav ul li a {
-        font-size: 19px;
+        font-size: 15px;
     }
 }
-
     @media screen and (min-width: 1024px) {
-    
         .subtitulo:hover {
         background-color: rgb(0, 204, 255);
-    }
-        
+    }   
     .flex {
         display: flex;
         flex-direction: row;
@@ -394,7 +383,6 @@ h2 {
     flex-direction: row;
     justify-content: center;
 }
-
 .image {
     width: 29%;
     align-content: center;
