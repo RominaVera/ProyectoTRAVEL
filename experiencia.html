@@ -168,6 +168,103 @@ if (resultado <=3) {
     else {
         alert("El destino recomendado es Rusia");
     }
+
+    alert("A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!")
+        let nombre = prompt ("Introduce tu Nombre");
+        let ciudadPreferida = prompt("Indica que ciudad elegirías para vivir durante el intercambio: 1) México; 2) Madrid; 3) Moscú; 4) Nepal");
+        let tiempoEstadia = prompt("Elige el tiempo de estadía en meses (colocar número de meses)");
+
+        function presupuestoPorPersona (ciudadPreferida, tiempoEstadia){
+            switch(ciudadPreferida){
+                case "1": return tiempoEstadia * 90000 + 50000;
+                break;
+                case "2": return tiempoEstadia * 120000 + 80000;
+                break;
+                case "3": return tiempoEstadia * 150000 + 85000;
+                break;
+                case "4": return tiempoEstadia * 175000 + 150000;
+                break;
+                default: return "(no se puede calcular, datos ingresados incorrectamente)";
+                break;
+            }
+        }
+        alert("Hola " + nombre + ", el presupuesto por persona para viaje (aéreo), alojamiento (casa de familia) y estadía es de $" + presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*0.8 + " en efectivo, con 20% de descuento");
+
+        let formaDePago = prompt ("Elige tu medio de pago financiado: 3 cuotas sin interés con tarjeta de crédito; 6 cuotas fijas (20% interés) con tarjeta de crédito; 12 cuotas fijas (40% interés) con tarjetas de crédito; 24 cuotas fijas (80% interés) con tarjeta de crédito (indique el número de cuotas)");
+        function financiacion(formaDePago) {
+            switch(formaDePago){
+                case "3": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)/3);
+                break;
+                case "6": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.2/6);
+                break;
+                case "12": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.4/12);
+                break;
+                case "24": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.8/24);
+                break;
+                default: return "no es una opción correcta";
+                break;
+            }
+        }
+
+        alert("Con su opción elegida de financiación, debe abonar " + formaDePago + " cuotas de $" + financiacion(formaDePago));
+
+        function Ciudad(nombre, estadia, alojamiento, pasaje){
+            this.nombre = nombre;
+            this.estadia = estadia;
+            this.alojamiento = alojamiento;
+            this.pasaje = pasaje;
+            this.calcularPresupuesto = function(){
+            return this.alojamiento * this.estadia + this.pasaje;
+            }
+        }
+
+        const ciudad1 = new Ciudad("Montevideo", tiempoEstadia, 25000, 10000);
+        const ciudad2 = new Ciudad("Santiago", tiempoEstadia, 30000, 12000);
+        const ciudad3 = new Ciudad("Lima", tiempoEstadia, 35000, 14000);
+        const ciudad4 = new Ciudad("Quito", tiempoEstadia, 40000, 16000);
+
+        
+        alert("Queremos ayudarte a lograr tus sueños, si tienes alguna dificultad económica para acceder al viaje podemos sugerirte algún otro destino más económico. Sigue y a continuación descubrirás cómo!");
+        alert("Los destinos más económicos (considerando el tiempo de estadía elegido) son: Montevideo = $ " + ciudad1.calcularPresupuesto() + ", Santiago = $ " + ciudad2.calcularPresupuesto() + ", Lima = $ " + ciudad3.calcularPresupuesto() + ", y Quito = $ " + ciudad4.calcularPresupuesto());
+    
+        let presupuestoPosible = prompt("Ingrese aquí su presupuesto");
+        function calcularPosibilidades(presupuestoPosible, ciudadPreferida, tiempoEstadia){
+        if(presupuestoPosible>=presupuestoPorPersona(ciudadPreferida, tiempoEstadia) * 0.8){
+            alert("Tu presupuesto te alcanza para poder realizar tu viaje soñado");
+                
+            }
+                else{
+                    if(presupuestoPosible < presupuestoPorPersona(ciudadPreferida, tiempoEstadia) * 0.8 && 
+                    presupuestoPosible>= ciudad4.calcularPresupuesto()){
+                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo, Santiago, Lima y Quito");
+                        
+                    }
+                    else if(presupuestoPosible < ciudad4.calcularPresupuesto() && 
+                    presupuestoPosible>= ciudad3.calcularPresupuesto()){
+                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo, Santiago y Lima");
+                        
+                    }
+                    else if(presupuestoPosible< ciudad3.calcularPresupuesto() && 
+                    presupuestoPosible>= ciudad2.calcularPresupuesto()){
+                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo y Santiago");
+                        
+                    }
+                    else if(presupuestoPosible < ciudad2.calcularPresupuesto() && 
+                    presupuestoPosible >= ciudad1.calcularPresupuesto()){
+                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar este destino: Montevideo");
+                        
+                    }
+                    else {
+                        alert("Tu presupuesto no alcanza para ningún destino, deberá elegir una estadía de menor duración");
+                    }
+                    }
+                    
+                }
+
+        calcularPosibilidades(presupuestoPosible, ciudadPreferida, tiempoEstadia);
+        
+
+
     alert("Mira las experiencias de otros viajeros en esta página");
     </script>
     

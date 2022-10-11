@@ -32,7 +32,7 @@
         
         <h1>Nuestros programas</h1><br><br>
         <div class="text">
-            <h2>Programas para estudiantes</h2><br>
+            <h2>Programas para estudiantes de intercambio</h2><br>
             <p>El programa de intercambio fue diseñado para jóvenes estudiantes, que estén interesados en conocer una cultura diferente, integrándose a una familia anfitriona como un hijo más, compartiendo su cultura, sus inquietudes y alegrías. Es esencial que el estudiante esté predispuesto a abrirse a esta nueva experiencia, a integrarse y aceptar las diferencias culturales tanto de su familia como de su país anfitrión, sus costumbres, religiones, modos de relacionarse, normas sociales, idioma, escuela, etc. Todo esto, no sólo le brindará al estudiante un amplio conocimiento de la nueva cultura, sino que le ayudará a crecer y desarrollarse personalmente. <br>
             En estos programas vivís con una familia que te aloja y te asume como a un hijo más, con los mismos deberes y derechos que los demás miembros. Durante ese período, seguís regularmente los cursos de una escuela secundaria. Así tenés la oportunidad de conocer la cultura como la viven los locales, de conocer el sistema escolar y, por supuesto, de aprender el idioma elegido. Un coordinador del país de destino y las coordinadoras de Travel Argentina nos encargamos de aconsejarte y acompañarte en esta experiencia. <br>
             
@@ -88,16 +88,26 @@
         </div>
     </footer>
     <script>
-        let nombre = prompt("¡BIENVENIDO/A A TRAVEL! ¿Cómo te llamas?")
-        let edad = parseInt(prompt("Ingresa por favor tu edad"));
-        if(edad<12){
-        alert("Hola " + nombre + "! No hay programas adecuados a tu edad")
-        }else if(edad>=12 && edad<=18){
-        alert("Hola " + nombre + "! El programa adecuado a tu edad es el de intercambio estudiantil, más información en esta página")
-        }else{
-        alert("Hola " + nombre + "! El programa adecuado a tu edad es el de Voluntariado para mayores de 18 años, más información en esta página")
+        let nombre = prompt("Ingrese su nombre");
+        let apellido = prompt("Ingrese su apellido");
+        let edad = prompt("Ingrese su edad");
+        let ciudad = prompt("¿Ciudad donde vive?");
+        let pais = prompt("¿País de residencia?");
+
+        const persona = [nombre, apellido, edad, ciudad, pais];
+        function datosPersonales (persona){
+        alert("¡Hola " + persona[0] + " " + persona[1] + " de la ciudad de " + persona[3] + ", " + persona[4] + "!");
+        if (persona[2] <=18 && persona[2] >=12){
+        alert("¡Visitá nuestra página de programas de intercambio estudiantil, tenemos mucha información que te puede interesar!");
+        }else if (persona[2] > 18 && persona[2] < 35){
+        alert("¡Visitá nuestra página de programas de Voluntariado, seguro hay una propuesta que es de tu interés!");
+        } else {
+        alert("¡Lo sentimos, no contamos con programas aptos para personas de su edad!");
         }
-    </script>
+        }
+        datosPersonales(persona);
+
+        </script>
 
 </body>
 </html>
