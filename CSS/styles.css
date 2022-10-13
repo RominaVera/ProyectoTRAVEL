@@ -10,6 +10,7 @@ nav {
     height: 120px;
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
 .enlacee {
     position: absolute;
@@ -49,6 +50,9 @@ li a.active, li a:hover {
 }
 #check {
     display: none;
+}
+p {
+    font-size: 30px;
 }
 /*--------------hasta aca barra de navegacion-------------------*/
 .slider {
@@ -128,7 +132,7 @@ h3 {
 }
 .subtitulo {
     font-family: 'Abril Fatface', cursive;
-    font-size: 25px;
+    font-size: 35px;
     list-style: none;
     border-style: ridge;
     border-color: rgb(117, 12, 215);
@@ -319,7 +323,8 @@ h2 {
     box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
 }
 .text {
-    font-size: 25px;font-weight: bold;
+    font-size: 90px;
+    font-weight: bold;
     border: 5px rgb(117, 12, 215) solid;
     margin-left: 35px;
     margin-right: 35px;
@@ -365,6 +370,12 @@ h2 {
     .footer{
         font-size: 20px;
     }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 50%;
+    }
 }
 @media (max-width: 952px){
     .enlace{
@@ -375,6 +386,12 @@ h2 {
     }
     .footer{
         font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 50%;
     }
 }
     @media screen and (min-width: 1024px) {
