@@ -40,6 +40,7 @@ nav {
     background:rgb(240, 6, 240);
     height: 130px;
     width: 100%;
+    
 }
 .enlacee {
     position: absolute;
@@ -260,6 +261,7 @@ h6{
     padding: 20px 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(117, 12, 215);
+    font-size: 33px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -384,6 +386,8 @@ h6{
     .info ul,
     .info p {
     text-align: left;
+    }.footer{
+        font-size: 25px;
     }
 
 }
@@ -417,6 +421,9 @@ h6{
     nav ul li a {
         font-size: 14px;
     }
+    .footer{
+        font-size: 20px;
+    }
 }
 @media (max-width: 768px){
     .checkbtn {
@@ -446,5 +453,8 @@ h6{
     } 
     #check:checked ~ ul {
         left: 0;
+    }
+    .footer{
+        font-size: 20px;
     }
     }
