@@ -127,6 +127,96 @@
                 </a>
             </div>
         </section>
+
+        <div class="data"><h2 class="parraf">Datos de interés de nuestros destinos favoritos</h2><br>
+            <p class="ipt1" id="mexico"></p><br>
+            <p class="ipt1" id="madrid"></p><br>
+            <p class="ipt1" id="moscu"></p><br>
+            <p class="ipt1" id="nepal"></p><br>
+        
+        </div>
+
+        <!-- Aquí comienza el formulario interactivo-->
+        
+        <div class="opciones">
+            <p class="parraf">¿Te interesa descubrir cuál es el destino que se acerca a tus gustos? <br>
+            Podes responder las siguientes preguntas y te asesoramos</p><br>
+            <form name="myForm">
+                <p class="parraf">¿En qué lugar preferis vacacionar?</p><br>
+                <div>
+                    <label class="ipt" for="lugar"><input  type="radio" name="lugar" id="playa" value= "1" required/>Playa</label>
+                    <label class="ipt" for="lugar"><input  type="radio" name="lugar" id="montana" value= "2" />Montaña</label>
+                    <label class="ipt"  for="lugar"><input  type="radio" name="lugar" id="bosque" value= "3" />Bosque</label>
+                    <br><br>
+                </div>
+                <p class="parraf">¿Con quienes te gusta compartir tus vacaciones?</p><br>
+                <div>
+                    <label class="ipt"  for="compania"><input type="radio" name="compania" id="amigos" value= "1" />Amigos</label>
+                    <label class="ipt" for="compania"><input type="radio" name="compania" id="pareja" value= "2" />Pareja</label>
+                    <label class="ipt" for="compania"><input type="radio" name="compania" id="familia" value= "3" />Familia</label>
+                    <br><br>
+                </div>
+                <p class="parraf">¿Cómo te gusta divertirte?</p><br>
+                <div>
+                    <label class="ipt" for="diversion"><input type="radio" name= "diversion" id="bailar" value= "1" />Salir a bailar</label>
+                    <label class="ipt" for="diversion"><input type="radio" name="diversion" id="cenar" value= "2" />Salir a cenar</label>
+                    <label class="ipt" for="diversion"><input type="radio" name="diversion" id="reunion" value= "3" />Reunión con amigos</label>
+                    <br><br>
+                </div>
+            </form>
+        
+            <div class="boton">
+                <button onclick="opciones()" class="envia">Enviar y recibir asesoramiento</button>
+            </div><br>
+        
+            <div id="resultado"><p class="parraf"></p></div><br>
+        </div>
+
+        <div><p class="parraf">A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!</p>
+            <form name="myForms">
+                <div><p class="parraf">Indica cuál es tu ciudad preferida:</p>
+                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="mexico" value= "1" />México</label>
+                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="madrid" value= "2" />Madrid</label>
+                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="moscu" value= "3" />Moscú</label>
+                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="nepal" value= "4" />Nepal</label>
+                    <br><br>
+                </div>
+                <div><p class="parraf">Elige el tiempo de estadía:</p>
+                    <label class="label" for="tiempoEstadia">Tiempo de estadía (en meses)</label>
+                    <input class="input" type="number" name="tiempoEstadia" id="tEstadia" min="1" max="24">
+                </div><br>
+                <div><p class="parraf">Selecciona una financiación:</p>
+                    
+                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="tresCuotas" value= "3" required />En 3 cuotas sin interés</label>
+                    <label class="ipt"  for="formaDePago"><input type="radio" name="formaDePago" id="seisCuotas" value= "6" />En 6 cuotas con el 20% de recargo</label>
+                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="doceCuotas" value= "12" />En 12 cuotas con el 40% de recargo</label>
+                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="veinticuatroCuotas" value= "24" />En 24 cuotas con el 80% de recargo</label>
+                    <br><br>
+                </div>
+            </form>
+                <div class="boton">
+                    <button onclick="presupuestoPorPersona()" class="envia">Calcular presupuesto por persona</button>
+                </div><br>
+                
+                <div id="presupuesto"><p class="parraf"></p></div><br>
+    
+                <div class="boton">
+                    <button onclick="financiacion()" class="envia">Calcular la financiación en cuotas</button>
+                </div><br>
+    
+                <div id="financiacion1"><p class="parraf"></p></div><br>
+        </div>
+    
+        <div><p class="parraf">Queremos ayudarte a lograr tus sueños! <br>Si tienes alguna dificultad económica para acceder al viaje, podemos sugerirte algún otro destino más económico. <br> Sigue y a continuación descubrirás cómo!</p>
+            
+                <div class="boton">
+                    <button onclick="presupuestoPosible()" class="envia">Destinos económicos, click aquí</button>
+                </div><br>
+
+            <div id="presupuestoPosible1"><p class="parraf"></p></div><br>
+
+<!-- Hasta acá el formulario interactivo-->
+
     </main>
     <footer class="footer">
         <div id="tabla">
@@ -148,126 +238,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        alert("¿Te interesa descubrir cuál es el destino que se acerca a tus gustos? Podes responder las siguientes preguntas y te asesoramos");
-
-let preg1 = prompt("Qué preferís para vacacionar: 1) Una playa; 2) La montaña; 3) Un bosque");
-let preg2 = prompt("Con quienes te gustaría compartir las vacaciones: 1) Amigos; 2) Pareja; 3) Familia");
-let preg3 = prompt("Cómo te gusta divertirte: 1) Salir a bailar; 2) Salir a cenar; 3) una reunión con amigos");
-
-let p1 = parseInt(preg1);
-let p2 = parseInt(preg2);
-let p3 = parseInt(preg3);
-let resultado = p1 + p2 + p3;
-
-if (resultado <=3) {
-    alert("Los destinos recomendados son México o España");
-}
-    else if (resultado >3 && resultado <=6) {
-        alert("El destino recomendado es Nepal");
-    }
-    else {
-        alert("El destino recomendado es Rusia");
-    }
-
-    alert("A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!")
-        let nombre = prompt ("Introduce tu Nombre");
-        let ciudadPreferida = prompt("Indica que ciudad elegirías para vivir durante el intercambio: 1) México; 2) Madrid; 3) Moscú; 4) Nepal");
-        let tiempoEstadia = prompt("Elige el tiempo de estadía en meses (colocar número de meses)");
-
-        function presupuestoPorPersona (ciudadPreferida, tiempoEstadia){
-            switch(ciudadPreferida){
-                case "1": return tiempoEstadia * 90000 + 50000;
-                break;
-                case "2": return tiempoEstadia * 120000 + 80000;
-                break;
-                case "3": return tiempoEstadia * 150000 + 85000;
-                break;
-                case "4": return tiempoEstadia * 175000 + 150000;
-                break;
-                default: return "(no se puede calcular, datos ingresados incorrectamente)";
-                break;
-            }
-        }
-        alert("Hola " + nombre + ", el presupuesto por persona para viaje (aéreo), alojamiento (casa de familia) y estadía es de $" + presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*0.8 + " en efectivo, con 20% de descuento");
-
-        let formaDePago = prompt ("Elige tu medio de pago financiado: 3 cuotas sin interés con tarjeta de crédito; 6 cuotas fijas (20% interés) con tarjeta de crédito; 12 cuotas fijas (40% interés) con tarjetas de crédito; 24 cuotas fijas (80% interés) con tarjeta de crédito (indique el número de cuotas)");
-        function financiacion(formaDePago) {
-            switch(formaDePago){
-                case "3": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)/3);
-                break;
-                case "6": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.2/6);
-                break;
-                case "12": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.4/12);
-                break;
-                case "24": return Math.round(presupuestoPorPersona(ciudadPreferida, tiempoEstadia)*1.8/24);
-                break;
-                default: return "no es una opción correcta";
-                break;
-            }
-        }
-
-        alert("Con su opción elegida de financiación, debe abonar " + formaDePago + " cuotas de $" + financiacion(formaDePago));
-
-        function Ciudad(nombre, estadia, alojamiento, pasaje){
-            this.nombre = nombre;
-            this.estadia = estadia;
-            this.alojamiento = alojamiento;
-            this.pasaje = pasaje;
-            this.calcularPresupuesto = function(){
-            return this.alojamiento * this.estadia + this.pasaje;
-            }
-        }
-
-        const ciudad1 = new Ciudad("Montevideo", tiempoEstadia, 25000, 10000);
-        const ciudad2 = new Ciudad("Santiago", tiempoEstadia, 30000, 12000);
-        const ciudad3 = new Ciudad("Lima", tiempoEstadia, 35000, 14000);
-        const ciudad4 = new Ciudad("Quito", tiempoEstadia, 40000, 16000);
-
-        
-        alert("Queremos ayudarte a lograr tus sueños, si tienes alguna dificultad económica para acceder al viaje podemos sugerirte algún otro destino más económico. Sigue y a continuación descubrirás cómo!");
-        alert("Los destinos más económicos (considerando el tiempo de estadía elegido) son: Montevideo = $ " + ciudad1.calcularPresupuesto() + ", Santiago = $ " + ciudad2.calcularPresupuesto() + ", Lima = $ " + ciudad3.calcularPresupuesto() + ", y Quito = $ " + ciudad4.calcularPresupuesto());
-    
-        let presupuestoPosible = prompt("Ingrese aquí su presupuesto");
-        function calcularPosibilidades(presupuestoPosible, ciudadPreferida, tiempoEstadia){
-        if(presupuestoPosible>=presupuestoPorPersona(ciudadPreferida, tiempoEstadia) * 0.8){
-            alert("Tu presupuesto te alcanza para poder realizar tu viaje soñado");
-                
-            }
-                else{
-                    if(presupuestoPosible < presupuestoPorPersona(ciudadPreferida, tiempoEstadia) * 0.8 && 
-                    presupuestoPosible>= ciudad4.calcularPresupuesto()){
-                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo, Santiago, Lima y Quito");
-                        
-                    }
-                    else if(presupuestoPosible < ciudad4.calcularPresupuesto() && 
-                    presupuestoPosible>= ciudad3.calcularPresupuesto()){
-                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo, Santiago y Lima");
-                        
-                    }
-                    else if(presupuestoPosible< ciudad3.calcularPresupuesto() && 
-                    presupuestoPosible>= ciudad2.calcularPresupuesto()){
-                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar estos destinos: Montevideo y Santiago");
-                        
-                    }
-                    else if(presupuestoPosible < ciudad2.calcularPresupuesto() && 
-                    presupuestoPosible >= ciudad1.calcularPresupuesto()){
-                        alert("Tu presupuesto no alcanza para el destino que habías elegido, te sugerimos en su lugar este destino: Montevideo");
-                        
-                    }
-                    else {
-                        alert("Tu presupuesto no alcanza para ningún destino, deberá elegir una estadía de menor duración");
-                    }
-                    }
-                    
-                }
-
-        calcularPosibilidades(presupuestoPosible, ciudadPreferida, tiempoEstadia);
-        
-
-
-    alert("Mira las experiencias de otros viajeros en esta página");
-    </script>
-    
+    <script src="JS/experiencia.js"></script>
 </body>
 </html>

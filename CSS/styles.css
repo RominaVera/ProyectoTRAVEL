@@ -303,8 +303,10 @@ a {
     text-decoration: none;
     color: rgb(117, 12, 215);
 }
-h2 {
+.tit {
     text-align: center;
+    font-size: 40px;
+    
 }
 .imagenes {
     display: flex;
@@ -335,6 +337,130 @@ h2 {
     box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
     text-align: justify;
 }
+
+/* Aquí agrego formato al formulario de Programas y experiencias*/
+
+.input {
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: justify;    border: 3px;
+    padding-left: 3px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+
+.boton {
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: .6em;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 40%;
+}
+.envia {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #750cd7;
+    border-radius: 10%;
+    background-color: rgba(240, 6, 240, 0.2);
+    padding: 5px;
+    border: none;
+    align-items: center;
+}
+
+.parraf {
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(240, 6, 240);
+    padding: 5px;
+    text-align: center;
+
+}
+
+.ipt {
+    font-size: 22px ;
+    color: #750cd7;
+    display: list-item;
+    text-align: center;
+}
+.ipt1 {
+    font-size: 22px ;
+    color: #750cd7;
+    display: flex;
+    text-align: justify;
+}
+.data{
+    margin: 35px;
+}
+#resultado {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+#financiacion1 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+#presupuesto{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+} 
+
+#presupuestoPosible1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+
+#respuesta{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+#asesoramiento{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #750cd7;
+    padding: 5px;
+    text-align: center;
+    border: 2px;
+    background-color: rgba(240, 6, 240, 0.2);
+}
+
+.label {
+    text-align: center;
+    align-content: center;
+    font-size: 22px ;
+    color: #750cd7;
+    margin-left: 40%;
+}
+
+/* Hasta acá el formato de formulario en Programas */
+
+
+
 @media (max-width: 768px){
     .checkbtn {
         display: block;

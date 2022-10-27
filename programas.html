@@ -32,7 +32,7 @@
         
         <h1>Nuestros programas</h1><br><br>
         <div class="text">
-            <h2>Programas para estudiantes de intercambio</h2><br>
+            <h2 class="tit">Programas para estudiantes de intercambio</h2><br>
             <p>El programa de intercambio fue diseñado para jóvenes estudiantes, que estén interesados en conocer una cultura diferente, integrándose a una familia anfitriona como un hijo más, compartiendo su cultura, sus inquietudes y alegrías. Es esencial que el estudiante esté predispuesto a abrirse a esta nueva experiencia, a integrarse y aceptar las diferencias culturales tanto de su familia como de su país anfitrión, sus costumbres, religiones, modos de relacionarse, normas sociales, idioma, escuela, etc. Todo esto, no sólo le brindará al estudiante un amplio conocimiento de la nueva cultura, sino que le ayudará a crecer y desarrollarse personalmente. <br>
             En estos programas vivís con una familia que te aloja y te asume como a un hijo más, con los mismos deberes y derechos que los demás miembros. Durante ese período, seguís regularmente los cursos de una escuela secundaria. Así tenés la oportunidad de conocer la cultura como la viven los locales, de conocer el sistema escolar y, por supuesto, de aprender el idioma elegido. Un coordinador del país de destino y las coordinadoras de Travel Argentina nos encargamos de aconsejarte y acompañarte en esta experiencia. <br>
             
@@ -50,7 +50,7 @@
             <img class="image" src="IMAGENES\estudiantes5.jpg" alt="Estudiantes de Travel"><br>
         </div>
         <div class="text">
-            <h2>Programas para voluntarios</h2><br><br><br>
+            <h2 class="tit">Programas para voluntarios</h2><br><br><br>
         
             <p>Lo que hace especial a Travel son las personas que están conectadas con nosotros. Los voluntarios son el corazón de nuestra organización. Son el vínculo entre estudiantes, familias, escuelas y la red Travel. Gracias a su compromiso, Travel puede ofrecer una red de atención sostenible en todo el mundo. Si vos también querés formar parte de esta red y cambiar el mundo poco a poco con nosotros, ¡sumate! <br>
             Los voluntarios son la base de nuestra organización. Por el trabajo y el esfuerzo que realizan, hay cientos de estudiantes que están agradecidos.
@@ -64,7 +64,45 @@
             <img class="image" src="IMAGENES\voluntarios6.jpg" alt="Voluntarios"><br>
             <img class="image" src="IMAGENES\voluntario2.jpg" alt="Voluntarios"><br>
         </div>
-    
+        
+        <!-- Se agrega interactividad con DOM   -->
+        
+        <div class="text">
+            <p class="tit">¿Quiere saber cuál es el programa más adecuado para Ud?</p><br>
+            <p class="tit">Ingrese sus datos en el siguiente formulario y lo asesoraremos!</p><br>
+        
+            <div class="datos">
+                
+                    <div>
+                        <label class="label" for="nombre y apellido">Nombre y Apellido</label>
+                        <input id="nomyap"class="input" type="text" name="nombre y apellido" required>
+                    </div><br>
+
+                    <div>
+                        <label class="label" for="edad">Edad</label>
+                        <input class="input" type="number" name="edad" min="1" max="100" required>
+                    </div><br>
+                
+                    <div>
+                        <label class="label" for="ciudad">Ciudad</label>
+                        <input class="input" type="text" name="ciudad" required>
+                    </div><br>
+                
+                    <div>
+                        <label class="label" for="pais">País</label>
+                        <input class="input" type="text" name="pais" required>
+                    </div><br>
+
+                    <div class="boton">
+                        <button onclick="datosPersonales()" class="envia">Recibir asesoramiento</button>
+                    </div><br>
+                    
+                    <div id="respuesta"></div><br>
+                    <div id="asesoramiento"></div><br>
+            </div>
+        </div>
+        <!-- Hasta acá la interactividad con DOM-->
+
     </main>
     
 <footer class="footer">
@@ -87,27 +125,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        let nombre = prompt("Ingrese su nombre");
-        let apellido = prompt("Ingrese su apellido");
-        let edad = prompt("Ingrese su edad");
-        let ciudad = prompt("¿Ciudad donde vive?");
-        let pais = prompt("¿País de residencia?");
-
-        const persona = [nombre, apellido, edad, ciudad, pais];
-        function datosPersonales (persona){
-        alert("¡Hola " + persona[0] + " " + persona[1] + " de la ciudad de " + persona[3] + ", " + persona[4] + "!");
-        if (persona[2] <=18 && persona[2] >=12){
-        alert("¡Visitá nuestra página de programas de intercambio estudiantil, tenemos mucha información que te puede interesar!");
-        }else if (persona[2] > 18 && persona[2] < 35){
-        alert("¡Visitá nuestra página de programas de Voluntariado, seguro hay una propuesta que es de tu interés!");
-        } else {
-        alert("¡Lo sentimos, no contamos con programas aptos para personas de su edad!");
-        }
-        }
-        datosPersonales(persona);
-
-        </script>
-
+    <script src="JS/programas.js"></script>
 </body>
 </html>
