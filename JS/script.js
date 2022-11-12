@@ -1,6 +1,6 @@
 let dataName=localStorage.getItem("nombre");
 let c=document.getElementById("welcome");
-c.innerHTML= dataName + " es un gusto que nos visites y poder asesorarte"
+c.innerHTML= "¡Hola " + dataName + "! Es un gusto que nos visites y poder asesorarte"
 
 
 

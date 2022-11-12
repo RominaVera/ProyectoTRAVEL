@@ -5,12 +5,24 @@
     list-style: none;
     box-sizing: border-box;   
 }
+body{
+    color: #750cd7;
+    /* font-size: 28px; */
+    line-height: 1.2;
+    font-family: 'Quicksand', sans-serif;
+    /* margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;*/
+}
+
 nav {
-    background:rgb(240, 6, 240);
+    /* background:rgb(194, 224, 233); */
+    background-color: rgb(133, 173, 248);
     height: 120px;
     width: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 1;
 }
 .enlacee {
     position: absolute;
@@ -18,7 +30,26 @@ nav {
 }
 .logo{
     height: 100px;
+    animation: App-logo-spin infinite 20s linear;
 }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .barra {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: flex-end;
+    float: right;
+  }
+
 nav ul {
     float: right;
     margin-right: 20px;
@@ -30,14 +61,16 @@ nav ul li {
 }
 nav ul li a {
     color: #750cd7;
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
 }
 li a.active, li a:hover {
-    background: rgb(117, 12, 215, 0.3);
+    background: rgb(117, 12, 215, 0.1);
     transition: .3s;
+    
+    font-weight: bold;
 }
 .checkbtn {
     font-size: 30px;
@@ -55,23 +88,43 @@ p {
     font-size: 30px;
 }
 /*--------------hasta aca barra de navegacion-------------------*/
+
 .slider {
-    width: 95%;
+    width: 45%;
     margin: auto;
     overflow: hidden;
+    /* padding: 0;
+    height: 450px; */
+    /* border: 10px  #750cd7; */
+}
+.slider1 {
+    width: 45%;
+    margin: auto;
+    overflow: hidden;
+    /* border: 10px  #750cd7;
+    border-style: groove; */
 }
 .slider ul {
     display: flex;
+    margin-top: 180px;
     padding: 0;
     width: 400%;
     animation: cambio 20s infinite alternate;
     animation-timing-function: ease-in-out;   
 }
-.slider li {
+.slider1 ul {
+    display: flex;
+    margin-top: 0px;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in-out;   
+}
+.slider li, .slider1 li {
     width: 100%;
     list-style: none;
 }
-.slider img {
+.slider img, .slider1 img {
     width: 100%;   
 }
 @keyframes cambio {
@@ -93,34 +146,70 @@ p {
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
 }
-.diversion{
-    margin-left: 15px 15px;
+.diversion {
+    text-align: center;
+}
+.confort {
+    text-align: center;
+}
+.divers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+.confor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+.diversion1 {
+    display: flex;
+    gap: 20px;
+}
+.confort1 {
+    display: flex;
+    gap: 20px;
 }
 .tuexperiencia {
-    font-family: Oswald;
-    color: rgb(240, 6, 240);
-    box-shadow: 3px 8px 5px 5px black;
-    font-size: 55px;
+    color: #750cd7;
+    box-shadow: 3px 8px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 45px;
     margin: 40px 60px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content:center;
     align-items:center;
-    flex-direction: column;     
+    flex-direction: column;   
 }
-h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+
+.diversion h3 {
     color: rgb(117, 12, 215);
-    text-shadow: 6px 10px 5px rgb(240, 6, 240);;
+    text-shadow: 3px 3px  #423e46;
     font-size: 75px;
     margin: 25px;
-    display: flex;
-    justify-content: end;   
+    /* display: flex;
+    justify-content: center; */   
 }
-.Introducción {
+.confort h3 {
+    color: rgb(117, 12, 215);
+    text-shadow: 3px 3px  #423e46;
+    font-size: 75px;
+    margin: 25px;
+    /* display: flex;
+    justify-content: center; */   
+}
+.introduccion {
     display: inline-block;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -131,29 +220,51 @@ h3 {
     align-items: stretch;  
 }
 .subtitulo {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
+    font-size: 30px;
     list-style: none;
     border-style: ridge;
     border-color: rgb(117, 12, 215);
     box-shadow: 3px 8px 5px black;
     border-radius: 5px;
-    display: inline-block;
+    flex: 1 1 auto;
+    width: auto;
     text-align: center;
-    margin-right:  20px;
-    padding: 50px 80px;
+    padding: 30px 60px;
 }
 .subtitulo:hover {
-    background-color:  rgba(117, 12, 215, 0.6);
+    background-color:  rgba(117, 12, 215, 0.3);
     transition: 0.5s;
 }
-.Cuerpo {
+.cuerpo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin: 80px 20px;
+    margin: 20px;
+    gap: 20px;
+}
+/* .cuerpo {
+    max-width: 90%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 20px;
+    } */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+
+.cuerpo a:hover {
+    color: #750cd7;
+    font-weight: bold;
+    transition: .3s;
 }
 /*---------------comienza footer------------------*/
 .footer {
@@ -163,9 +274,8 @@ h3 {
     width: 100%;
     height: auto;
     padding: 20px 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(117, 12, 215);
-    font-size: 33px;
+    font-size: 15px;
     margin: 0;
 }
 #tabla {
@@ -175,6 +285,10 @@ h3 {
     grid-template-columns: 1fr 2fr 3fr;
     grid-column-gap: 15px;
 }
+.box2 a:hover {
+    background: rgb(117, 12, 215, 0.1);
+    transition: .3s;
+    }
 .box1 {
     padding-left: 20px;
     padding-top: 20px;
@@ -195,18 +309,25 @@ h3 {
     text-decoration: none;
     color: rgb(117, 12, 215);
 }
+h5 {
+    font-size: 20px;
+}
+.box2 a {
+    font-size: 20px;
+}
+.box3 p {
+    font-size: 20px;
+}
 /*------------------------Comienza hoja de EXPERIENCIA---------------------------*/
 .foto.portada.estefi{
     display: flex;
     align-content: center;
-    justify-content:center;
-    align-items:center;
 }
 .titulo-estefi{
-    font-family: Oswald;
-    color: rgb(240, 6, 240);
-    box-shadow: 3px 8px 5px 5px black;
-    font-size: 55px;
+    /* font-family: Oswald; */
+    color: #750cd7;
+    box-shadow: 3px 8px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
     margin: 40px 60px;
     display: flex;
     flex-wrap: wrap;
@@ -258,7 +379,7 @@ figure .back {
     position: absolute;
     top: 0;
     padding: 20px;
-    font-weight: normal;
+    font-weight: 700;
     color: rgb(117, 12, 215);
     transform: perspective(600px) rotateY(180deg);
     backface-visibility: hidden;
@@ -266,8 +387,8 @@ figure .back {
     text-align: center;
 }
 figure .back p {
-    font-size: 19px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 
@@ -281,97 +402,175 @@ figure .back p {
     padding-top: 130px;
     padding-bottom: 80px;
     font-family: 'Quicksand', sans-serif;
-    background-color: lightblue ;
+    background-color: white
 }
 
 .main h1 {
     text-align: center;
     color: rgb(117, 12, 215);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 85px;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-size: 55px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
 }
 .ahref:hover{
-    color: rgb(117, 12, 215);
-    background-color: rgba(240, 6, 240, 0.3);
+    color: rgb(181, 120, 238);
+    background-color: rgba(240, 6, 240, 0.329);
     transition: 0,5s; 
     border-radius: 10px;
 }
+.ahref {
+    text-shadow: 1px 2px black;
+}
 a {
     text-decoration: none;
-    color: rgb(117, 12, 215);
+    color: #750cd7;
 }
+/* .bloque {
+    display: inline-block;
+} */
+
 .tit {
     text-align: center;
     font-size: 40px;
+    text-shadow: 3px 3px  #423e46;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.tit1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 2px  #423e46;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.efectos {
+    text-shadow: 3px 3px  #423e46;
     
 }
-.imagenes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 30px;
+.contenido {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.image {
-    width: 90%;
-    align-content: center;
-    border: 5px rgb(117, 12, 215) solid;
-    border-radius: 10%;
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 30px;
-    box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
+.text p{
+    font-size: 22px;
 }
 .text {
-    font-size: 90px;
-    font-weight: bold;
-    border: 5px rgb(117, 12, 215) solid;
-    margin-left: 35px;
-    margin-right: 35px;
+    font-weight: 500;
+    /* border: 10px  #750cd7;
+    border-style: groove; */
+    width: 95%;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 30px;
-    border-radius: 10%;
-    background-color: white;
-    color: rgb(240, 6, 240);
-    box-shadow: 7px 7px 10px 0 rgba(236, 149, 175, 0.5);
+    background-color: rgb(7, 116, 160);
+    /* background-color: rgb(4, 12, 122); */
+    color: rgb(241, 253, 253);
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
     text-align: justify;
+    border-radius: 10px;
 }
-
+.texte{
+    display: inline-block;
+    
+}
+.text1 p{
+    font-size: 22px;
+}
+.text1 {
+    font-weight: 500;
+    /* border: 10px  #750cd7;
+    border-style: groove; */
+    width: 46%;
+    margin-left: 33px;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: rgb(7, 116, 160);
+    /* background-color: rgb(4, 12, 122); */
+    color: rgb(241, 253, 253);
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
+    text-align: justify;
+    display: inline-block;
+    border-radius: 10px;
+}
+.divtxt{
+    width:75%;
+    display:inline-block;
+}
+.fundador {
+    display: inline-block;
+    /* border: 10px  #750cd7;
+    border-style: groove; */
+    margin-left: 10px;
+}
+.fundador h4 {
+    margin-left: 40px;
+}
+#fundador {
+    width: 110%;
+    margin-left: 40px
+}
+.text3 {
+    font-weight: 500;
+    /* border: 10px  #750cd7;
+    border-style: groove; */
+    width: 46%;
+    margin-left: 33px;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: rgb(7, 116, 160);
+    /* background-color: rgb(4, 12, 122); */
+    color: rgb(241, 253, 253);
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+}
+.text3 p{
+    font-size: 22px;
+}
 /* Aquí agrego formato al formulario de Programas y experiencias*/
-
+.titulos {
+    text-align: center;
+    font-size: 10px;
+}
 .input {
     font-size: 20px;
-    margin-left: 50px;
-    text-align: justify;    border: 3px;
+    margin-left: 0px;
+    text-align: center;
+    width:300px;
+    height: 45px;
     padding-left: 3px;
-    background-color: rgba(240, 6, 240, 0.2);
+    background-color: white;
 }
 
 .boton {
-    border-radius: 4px;
-    text-transform: uppercase;
-    padding: .6em;
-    font-weight: bold;
+    border-radius: 10px;
+    padding: 25px;
+    font-weight: 400;
     cursor: pointer;
     align-items: center;
-    margin-left: 40%;
 }
 .envia {
     font-size: 20px;
     font-weight: bolder;
-    color: #750cd7;
+    color: white;
     border-radius: 10%;
-    background-color: rgba(240, 6, 240, 0.2);
-    padding: 5px;
-    border: none;
-    align-items: center;
+    background-color: rgb(133, 173, 248);
+    padding: 15px;
+    border: 2px solid white;
+    text-align: center;
+    margin-left: 40%;
 }
-
+.envia:hover {
+    color: black;
+}
 .parraf {
-    font-size: 30px;
-    font-weight: bolder;
-    color: rgb(240, 6, 240);
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
     padding: 5px;
     text-align: center;
 
@@ -379,29 +578,80 @@ a {
 
 .ipt {
     font-size: 22px ;
+    font-weight: 700;
     color: #750cd7;
     display: list-item;
     text-align: center;
 }
 .ipt1 {
     font-size: 22px ;
-    color: #750cd7;
+    font-weight: 700;
+    color: rgb(241, 253, 253);
     display: flex;
     text-align: justify;
 }
+.ipt1 input {
+    margin-left: 120px;
+}
+.data1 {
+    display: inline-block;
+    width: 23.3%;
+    padding: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-shadow: 3px 3px  #423e46;
+    background-color: rgb(7, 116, 160);
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
+}
+.data2 {
+    display: inline-block;
+    width: 31%;
+    padding: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: rgb(133, 173, 248);
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
+    border-radius: 5px;
+    text-shadow: 3px 3px  #423e46;
+    /* align-content: space-between ; */
+}
+.data3 {
+    display: inline-block;
+    width: 31%;
+    padding: 14px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: rgb(133, 173, 248);
+    box-shadow: 7px 7px 10px 0 rgba(77, 86, 97, 0.5);
+    border-radius: 5px;
+    text-shadow: 3px 3px  #423e46;
+    /* align-content: space-between ; */
+}
+.data3 input {
+    align-items: center;
+}
 .data{
     margin: 35px;
+    display: inline-block;
+    align-content: space-between;
 }
-#resultado {
+#resultado, 
+#financiacion1, 
+#presupuesto,
+#presupuestoPosible1, 
+#respuesta,
+#asesoramiento {
     font-size: 30px;
     font-weight: bolder;
-    color: #750cd7;
+    color: white;
+    text-shadow: 3px 3px  #423e46;
     padding: 5px;
     text-align: center;
     border: 2px;
-    background-color: rgba(240, 6, 240, 0.2);
+    background-color: rgb(7, 116, 160);
 }
-#financiacion1 {
+/* #financiacion1 {
     font-size: 30px;
     font-weight: bolder;
     color: #750cd7;
@@ -428,35 +678,37 @@ a {
     text-align: center;
     border: 2px;
     background-color: rgba(240, 6, 240, 0.2);
-}
+} */
 
-#respuesta{
-    font-size: 30px;
-    font-weight: bolder;
+/* #respuesta, #asesoramiento{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 3px 3px  #423e46;
+    border: 2px;
+    background-color: rgb(133, 173, 248);
+} */
+/* #asesoramiento{
+    font-size: 20px;
+    font-weight: 600;
     color: #750cd7;
     padding: 5px;
     text-align: center;
     border: 2px;
     background-color: rgba(240, 6, 240, 0.2);
-}
-#asesoramiento{
-    font-size: 30px;
-    font-weight: bolder;
-    color: #750cd7;
-    padding: 5px;
-    text-align: center;
-    border: 2px;
-    background-color: rgba(240, 6, 240, 0.2);
-}
+} */
 
-.label {
+/* .label {
     text-align: center;
     align-content: center;
     font-size: 22px ;
+    font-weight: 700;
     color: #750cd7;
     margin-left: 40%;
 }
-
+ */
 /* Hasta acá el formato de formulario en Programas */
 
 
@@ -469,11 +721,12 @@ a {
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgb(0, 204, 255);
+        background: rgb(133, 173, 248);
         top: 80px;
         left: 100%;
         text-align: center;
         transition: all .5s;
+        margin-top: 10px;
     }
     nav ul li{
         display: block;
@@ -481,7 +734,7 @@ a {
         line-height: 20px;
     }
     nav ul li a{
-        font-size: 25px;
+        font-size: 20px;
     }
     li a:hover, li a.active{
         background: none;
@@ -489,30 +742,30 @@ a {
     } 
     #check:checked ~ ul {
         left: 0;
-    }
-    .slider{
-        display: none;
-    }
+    } 
+    /* .slider{        
+    } */
     nav{
         margin: -53px 0;
         height: 133px;
-    }
+    } 
     .footer{
-        font-size: 20px;
+        font-size: 10px;
     }
-    p {
-        font-size: 20px;
+    .box2 a, .box3 p {
+        font-size: 15px;
     }
-    h2 {
-        font-size: 50%;
+    .box2 h5, .box3 h5 {
+        font-size: 15px;
     }
+    
     h3{
-        font-size: 50px;
+        font-size: 15px;
         justify-content: center;
     }
 }
 @media (max-width: 952px){
-    .enlace{
+    .enlacee{
         padding-left: 10px;
     }
     nav ul li a {
@@ -534,7 +787,7 @@ a {
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgb(0, 204, 255);
+        background: rgb(133, 173, 248);
         top: 80px;
         left: 100%;
         text-align: center;
@@ -546,7 +799,7 @@ a {
         line-height: 20px;
     }
     nav ul li a{
-        font-size: 25px;
+        font-size: 20px;
     }
     li a:hover, li a.active{
         background: none;
@@ -569,13 +822,16 @@ a {
 }
     @media screen and (max-width: 1400px){
         nav ul li a {
-            font-size: 18px;
+            font-size: 15px;
+}
+        .enlacee{
+            padding-left: 10px;
         }
     }
 
     @media screen and (min-width: 1024px) {
         .subtitulo:hover {
-        background-color: rgb(0, 204, 255);
+        background-color: rgb(194, 224, 233);
     }   
     .flex {
         display: flex;
@@ -592,6 +848,7 @@ a {
     margin-left: 15px;
     margin-right: 15px;
 }
+
 .text {
     font-size: 15px;
 }

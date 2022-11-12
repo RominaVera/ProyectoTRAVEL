@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Oswald:wght@200;300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>ExperienciaII</title>
@@ -24,7 +18,7 @@
             <i class="fas fa-bars"></i>
         </label>
         <a href="#" class="enlacee">
-            <img src="IMAGENES\logo-transp.png" alt=" "class="logo">
+            <img src="IMAGENES\logonuevo.png" alt=" "class="logo">
         </a>
         <ul>
             <li><a class="active" href="index.html">Inicio</a></li>
@@ -36,12 +30,17 @@
     </nav> 
     <main>
     
-        <section class="foto.portada.estefi">
-                <img src="IMAGENES\estefi5.jpg" alt="Experiencia Travel">
-        </section>
+        <div class="slider">
+            <ul>
+                <li><img src="IMAGENES\nepal.jpg" alt="fiesta" width="100%" height="450px"></li>
+                <li><img src="IMAGENES\mexico1.jpg" alt="risas" width="100%" height="450px"></li>
+                <li><img src="IMAGENES\moscu.jpg" alt="espuma" width="100%" height="450px"></li>
+                <li><img src="IMAGENES\madrid.jpg" alt="festejo" width="100%" height="450px"></li>
+            </ul>
+        </div>
         <section>
             <article class="titulo-estefi">
-            <h1>
+            <h1 class="efectos">
                 Una Aventura que te cambiará la vida
             </h1><br>
             <h4>
@@ -128,40 +127,33 @@
             </div>
         </section>
 
-        <div class="data"><h2 class="parraf">Datos de interés de nuestros destinos favoritos</h2><br>
-            <p class="ipt1" id="mexico"></p><br>
-            <p class="ipt1" id="madrid"></p><br>
-            <p class="ipt1" id="moscu"></p><br>
-            <p class="ipt1" id="nepal"></p><br>
-        
+        <div class="data"><h2 class="tit1">Datos de interés de nuestros destinos favoritos</h2><br>
+            <div class="data1"><p class="ipt1" id="mexico"></p></div>
+            <div class="data1"><p class="ipt1" id="madrid"></p></div>
+            <div class="data1"><p class="ipt1" id="moscu"></p></div>
+            <div class="data1"><p class="ipt1" id="nepal"></p></div>
         </div>
 
         <!-- Aquí comienza el formulario interactivo-->
         
         <div class="opciones">
-            <p class="parraf">¿Te interesa descubrir cuál es el destino que se acerca a tus gustos? <br>
-            Podes responder las siguientes preguntas y te asesoramos</p><br>
+            <h2 class="tit1">¿Te interesa descubrir cuál es el destino que se acerca a tus gustos?</h2>
+            <h2 class="tit1"> Podes responder las siguientes preguntas y te asesoramos</p></h2>
             <form name="myForm">
-                <p class="parraf">¿En qué lugar preferis vacacionar?</p><br>
-                <div>
-                    <label class="ipt" for="lugar"><input  type="radio" name="lugar" id="playa" value= "1" required/>Playa</label>
-                    <label class="ipt" for="lugar"><input  type="radio" name="lugar" id="montana" value= "2" />Montaña</label>
-                    <label class="ipt"  for="lugar"><input  type="radio" name="lugar" id="bosque" value= "3" />Bosque</label>
-                    <br><br>
+                <div class="data2"><p class="parraf">¿En qué lugar preferis vacacionar?</p>
+                    <label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="playa" value= "1" required/>Playa</label>
+                    <label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="montana" value= "2" />Montaña</label>
+                    <label class="ipt1"  for="lugar"><input  type="radio" name="lugar" id="bosque" value= "3" />Bosque</label>
                 </div>
-                <p class="parraf">¿Con quienes te gusta compartir tus vacaciones?</p><br>
-                <div>
-                    <label class="ipt"  for="compania"><input type="radio" name="compania" id="amigos" value= "1" />Amigos</label>
-                    <label class="ipt" for="compania"><input type="radio" name="compania" id="pareja" value= "2" />Pareja</label>
-                    <label class="ipt" for="compania"><input type="radio" name="compania" id="familia" value= "3" />Familia</label>
-                    <br><br>
+                <div class="data2"><p class="parraf">Salir de vacaciones con ...</p>
+                    <label class="ipt1"  for="compania"><input type="radio" name="compania" id="amigos" value= "1" />Amigos</label>
+                    <label class="ipt1" for="compania"><input type="radio" name="compania" id="pareja" value= "2" />Pareja</label>
+                    <label class="ipt1" for="compania"><input type="radio" name="compania" id="familia" value= "3" />Familia</label>
                 </div>
-                <p class="parraf">¿Cómo te gusta divertirte?</p><br>
-                <div>
-                    <label class="ipt" for="diversion"><input type="radio" name= "diversion" id="bailar" value= "1" />Salir a bailar</label>
-                    <label class="ipt" for="diversion"><input type="radio" name="diversion" id="cenar" value= "2" />Salir a cenar</label>
-                    <label class="ipt" for="diversion"><input type="radio" name="diversion" id="reunion" value= "3" />Reunión con amigos</label>
-                    <br><br>
+                <div class="data2"><p class="parraf">¿Cómo te gusta divertirte?</p>
+                    <label class="ipt1" for="diversion"><input type="radio" name= "diversion" id="bailar" value= "1" />Salir a bailar</label>
+                    <label class="ipt1" for="diversion"><input type="radio" name="diversion" id="cenar" value= "2" />Salir a cenar</label>
+                    <label class="ipt1" for="diversion"><input type="radio" name="diversion" id="reunion" value= "3" />Reunión con amigos</label>
                 </div>
             </form>
         
@@ -172,26 +164,25 @@
             <div id="resultado"><p class="parraf"></p></div><br>
         </div>
 
-        <div><p class="parraf">A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!</p>
+        <div><h2 class="tit1">A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!</h2>
             <form name="myForms">
-                <div><p class="parraf">Indica cuál es tu ciudad preferida:</p>
-                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="mexico" value= "1" />México</label>
-                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="madrid" value= "2" />Madrid</label>
-                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="moscu" value= "3" />Moscú</label>
-                    <label class="ipt" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="nepal" value= "4" />Nepal</label>
-                    <br><br>
+                <div class="data3"><p class="parraf">Indica cuál es tu ciudad preferida:</p>
+                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="mexico" value= "1" />México</label>
+                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="madrid" value= "2" />Madrid</label>
+                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="moscu" value= "3" />Moscú</label>
+                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="nepal" value= "4" />Nepal</label>
                 </div>
-                <div><p class="parraf">Elige el tiempo de estadía:</p>
-                    <label class="label" for="tiempoEstadia">Tiempo de estadía (en meses)</label>
-                    <input class="input" type="number" name="tiempoEstadia" id="tEstadia" min="1" max="24">
-                </div><br>
-                <div><p class="parraf">Selecciona una financiación:</p>
+                <div class="data3"><p class="parraf">Elige el tiempo de estadía:</p><br>
+                    <label class="label" for="tiempoEstadia"></label>
+                    <input class="input" type="number" name="tiempoEstadia" placeholder="Tiempo de estadía (en meses)" id="tEstadia" min="1" max="24">
+                </div>
+                <div class="data3"><p class="parraf">Selecciona una financiación:</p>
                     
-                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="tresCuotas" value= "3" required />En 3 cuotas sin interés</label>
-                    <label class="ipt"  for="formaDePago"><input type="radio" name="formaDePago" id="seisCuotas" value= "6" />En 6 cuotas con el 20% de recargo</label>
-                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="doceCuotas" value= "12" />En 12 cuotas con el 40% de recargo</label>
-                    <label class="ipt" for="formaDePago"><input type="radio" name="formaDePago" id="veinticuatroCuotas" value= "24" />En 24 cuotas con el 80% de recargo</label>
-                    <br><br>
+                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="tresCuotas" value= "3" required />En 3 cuotas sin interés</label>
+                    <label class="ipt1"  for="formaDePago"><input type="radio" name="formaDePago" id="seisCuotas" value= "6" />En 6 cuotas con el 20% de recargo</label>
+                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="doceCuotas" value= "12" />En 12 cuotas con el 40% de recargo</label>
+                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="veinticuatroCuotas" value= "24" />En 24 cuotas con el 80% de recargo</label>
+                    
                 </div>
             </form>
                 <div class="boton">
@@ -207,7 +198,7 @@
                 <div id="financiacion1"><p class="parraf"></p></div><br>
         </div>
     
-        <div><p class="parraf">Queremos ayudarte a lograr tus sueños! <br>Si tienes alguna dificultad económica para acceder al viaje, podemos sugerirte algún otro destino más económico. <br> Sigue y a continuación descubrirás cómo!</p>
+        <div><h2 class="tit1">Queremos ayudarte a lograr tus sueños! Si tienes alguna dificultad económica para acceder al viaje, podemos sugerirte algún otro destino más económico. Sigue, y a continuación descubrirás cómo!</h2>
             
                 <div class="boton">
                     <button onclick="presupuestoPosible()" class="envia">Destinos económicos, click aquí</button>
@@ -227,8 +218,8 @@
             </div>
             <div class="box2">
                 <h5>SI ESTAS INTERESADO, CONTACTANOS.</h5><br>
-                <a class="contactos" href="https://travelviajes.com.ar/">travelviajes@gmail.com</a><br><br>
-                <a class="contactos" href="https://travelviajes.com.ar/">Tel: 2964-565556</a><br><br>
+                <a class="contactos" href="https://travelviajes.com.ar/">travelviajes@gmail.com</a><br>
+                <a class="contactos" href="https://travelviajes.com.ar/">Tel: 2964-565556</a><br>
                 <a class="contactos" href="https://travelviajes.com.ar/">Dirección: Rosales 114, Río Grande TDF</a>
             </div>
             <div class="box3">
