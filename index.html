@@ -9,67 +9,78 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>TRAVEL</title>
     </head>
 <body>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="enlacee">
-                <img src="IMAGENES\logonuevo.png" alt=" "class="logo">
-            </a>
-            <div class="barra">
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a class="active1" href="programas.html">Nuestros programas</a></li>
-                <li><a class="active2" href="experiencia.html">Experiencia</a></li>
-                <li><a class="active3" href="nosotros.html">Sobre nosotros</a></li>
-                <li><a class="active4" href="contacto.html">Contacto</a></li>
-            </ul></div>
-        </nav> 
-    <main class="mainro">
-
-        <div class="slider">
-            <ul>
-                <li><img src="IMAGENES\fiesta portada.jpg" alt="fiesta" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\fiesta 1.jpg" alt="risas" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\fiesta espuma.jpg" alt="espuma" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\dj.jpg" alt="festejo" width="100%" height="450px"></li>
-            </ul>
-        </div>
-            <div class="tuexperiencia">
-                
-                    <h2 class="efectos">TRAVEL: ¡Diversión garantizada!</h2><br>
-                    <h4>Viaja con nosotros, inscríbete con tus compañeros o como guía.</h4>
-                    <h4>No es un viaje cualquiera, es Tu Viaje con Amigos</h4>
-                
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: rgb(133, 173, 248); position: fixed; width: 100%; z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="IMAGENES/logonuevo.png" alt="Travel"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link active list" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link list" href="programas.html">Nuestros programas</a>
+                    <a class="nav-link list" href="experiencia.html">Experiencias</a>
+                    <a class="nav-link list" href="nosotros.html"> Sobre Nosotros</a>
+                    <a class="nav-link list" href="contacto.html"> Contactos</a>
+                </div>
             </div>
-            <section class="introduccion">
+        </div>
+    </nav><br><br>
+
+    <main>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide posit" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMAGENES/fiesta5.jpg" class="d-block w-100" alt="Fiesta">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/fiesta2.jpg" class="d-block w-100" alt="Fiesta">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/fiesta3.jpg" class="d-block w-100" alt="Fiesta">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/fiesta4.jpg" class="d-block w-100" alt="Festejo">
+                </div>
+            </div>
+        </div><br>
+
+        <div class="tuexperiencia">
+            <h2 class="efectos">TRAVEL: ¡Diversión garantizada!</h2><br>
+            <h4>Viaja con nosotros, inscríbete con tus compañeros o como guía.</h4>
+            <h4>No es un viaje cualquiera, es Tu Viaje con Amigos</h4>
+        </div>
+
+        <section class="introduccion">
                 
                 <div class="diversion">
                     <h3>Diversión</h3>
                 </div>
                     <div class="divers">
-                        <img class="diversion1" src="IMAGENES\Pileta2.jpg" alt="Pileta1" width="450" height="367">
-                        <img class="diversion1" src="IMAGENES\baile.jpg" alt="Baile" width="450" height="367">
-                        <img class="diversion1" src="IMAGENES\pileta3.jpg" alt="Pileta2" width="450" height="367"> 
+                        <img class="diversion1" src="IMAGENES\Pileta2.jpg" alt="Pileta1" width="350" height="286">
+                        <img class="diversion1" src="IMAGENES\baile.jpg" alt="Baile" width="350" height="286">
+                        <img class="diversion1" src="IMAGENES\pileta3.jpg" alt="Pileta2" width="350" height="286"> 
                     </div>  
                 
                 <div class="confort">
                     <h3>Confort</h3><br>
                 </div>
-                    <div class="confor"></div>
-                        <img class="confort1" src="IMAGENES\habitacion2.jpg" alt="Habitacion" width="450" height="368">
-                        <img class="confort1" src="IMAGENES\Desayuno.jpg" alt="desayuno" width="450" height="368">
-                        <img class="confort1" src="IMAGENES\Cena.jpg" alt="Cena" width="450" height="368">
+                    <div class="confor">
+                        <img class="confort1" src="IMAGENES\habitacion2.jpg" alt="Habitacion" width="350" height="286">
+                        <img class="confort1" src="IMAGENES\Desayuno.jpg" alt="desayuno" width="350" height="286">
+                        <img class="confort1" src="IMAGENES\Cena.jpg" alt="Cena" width="350" height="286">
                     </div>
                 
             </section>
-            <p>
-                <h4 class="tuexperiencia">Tu mejor elección a sólo un click</h4><br><br>
-            </p>
+            <div class="tuexperiencia">
+                <h4 class="efectos">Tu mejor elección a sólo un click</h4>
+            </div>
             <div class="cuerpo">
                 <article class="subtitulo"><a title="Tipo de programa" href="programas.html">Tipo de programa</a><br><br>
                     <img src="IMAGENES\Tipo de programa.jpg" alt="Eleccion" width="300" height="200"></article>      
@@ -78,7 +89,7 @@
                 <article class="subtitulo"><a title="Fecha de viaje" href="contacto.html">Fecha de viaje</a><br><br>
                     <img src="IMAGENES\foto camara.jpg" alt="Valija" width="300" height="200"></article>
                 <article class="subtitulo"><a title="Edades" href="programas.html">Edades</a><br><br>
-                    <img src="IMAGENES\amigos.jpg" alt="Amigos" width="300" height="200" ></article>
+                    <img src="IMAGENES\amigos.jpg" alt="Amigos" width="300" height="200"></article>
                 </div>
     </main>  
     

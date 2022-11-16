@@ -9,60 +9,74 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>¿Quiénes somos?</title>
 </head>
 <body>
-        <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlacee">
-            <img src="IMAGENES\logonuevo.png" alt=" "class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="programas.html">Nuestros programas</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav> 
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: rgb(133, 173, 248); position: fixed; width: 100%; z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="IMAGENES/logonuevo.png" alt="Travel"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link list" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link list" href="programas.html">Nuestros programas</a>
+                    <a class="nav-link list" href="experiencia.html">Experiencias</a>
+                    <a class="nav-link active list" href="nosotros.html"> Sobre Nosotros</a>
+                    <a class="nav-link list" href="contacto.html"> Contactos</a>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+        
 <main class="main">
-    <div class="bloque">
-        <h1 class="efectos">Sobre Nosotros</h1>
-        <div class="slider1">
-            <ul>
-                <li><img src="IMAGENES\img1.jpg" alt="Nuestras estudiantes" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\img2.jpg" alt="Familias seguras" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\img3.jpg" alt="Nuestros estudiantes" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\estudiantes4.jpg" alt="Graduación" width="100%" height="450px"></li>
-            </ul>
-        </div><br><br>
-    <div class="contenido"></div>
-        <h2 class="tit">¿Quiénes somos?</h2>
-            <h2 class="tit">Nuestra historia</h2><br>
+    
+        <div id="carouselExampleSlidesOnly" class="carousel slide posit" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMAGENES/img1.jpg" class="d-block w-100" alt="Nuestras estudiantes">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/img2.jpg" class="d-block w-100" alt="Familias seguras">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/img4.jpg" class="d-block w-100" alt="Nuestros estudiantes">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/img6.jpg" class="d-block w-100" alt="Nuestros estudiantes">
+                </div>
+            </div>
+        </div><br>
+        
+    <h1 class="efectos">Sobre Nosotros</h1>
+    <h2 class="tit">¿Quiénes somos?</h2>
+    <h2 class="tit">Nuestra historia</h2>
             
-            <div class="text">
-            <div class="divtxt">
+        <div class="text1">
+            <div class="titi">
                 <p class="texte">El dr. Roberto Zanetti fundó Travel en 2005; y fue su Director Ejecutivo por un largo período de tiempo. Su arduo trabajo y compromiso fueron reconocidos en 2015, cuando Travel tomó el estatus de Organización Educativa sin Fines de Lucro.
             Los primeros participantes fueron 20 estudiantes del interior del país invitados a vivir con familias europeas, con el fin de establecer la amistad internacional.  
             Los intercambios iniciales establecieron la experiencia de vivir con una familia y proporcionaron el impulso para la expansión de Travel a otras partes del mundo. Desde entonces, Travel ha tendido un puente en cinco continentes, creando una red de más de 55 países que han prestado servicio a más de 20.000 participantes en los programas, a medida que seguimos desarrollando y llegando a más países, estudiantes y familias.
             Sus voluntarios en Capital y el resto del país se ocupan de la selección y acompañamiento de los estudiantes y de las familias anfitrionas. Durante el intercambio, colaboran para solucionar cualquier tipo de inconvenientes estableciendo una comunicación permanente entre los estudiantes y sus familias. Anualmente, más de 100 estudiantes argentinos y entranjeros participan en los programas de intercambio.</p><br><br>
         </div>
+        <div class="titi">
         <div class="fundador">
         <img id="fundador" src="IMAGENES/zanetti.jpg" alt="Dr. Roberto Zanetti"><br><br>
-        <h4>Nuestro fundador, Dr. Roberto Zanetti</h4><br>
+        <h4>Nuestro fundador, Dr. Roberto Zanetti</h4><br></div>
         </div></div>
     
-        <h2 class="tit">¿Por qué elegir Travel?</h2><br><br>
+        <h2 class="tit">¿Por qué elegir Travel?</h2>
         <div class="text1">
-            <p><strong><u>EXPERIENCIA:</u></strong> Travel te ofrece la oportunidad de explorar otros países y culturas, aprender nuevas lenguas y descubrirse. Queremos transformar a jóvenes inculcando la pasión por el estudio continuo, y las habilidades y el conocimiento para prosperar y contribuir a la diversidad cultural. Nuestros participantes valoran los esfuerzos de las familias anfitrionas y la vida en una comunidad ya que están en una edad propicia para adaptarse totalmente a un nuevo país y a su cultura, y lo suficientemente maduros para reflexionar sobre sus vivencias. La educación es esencial en la misión de Travel de aumentar el conocimiento y el entendimiento global.<br></p>
-        </div>
-        <div class="text1">
+            <div class="titi">
+            <p><strong><u>EXPERIENCIA:</u></strong> Travel te ofrece la oportunidad de explorar otros países y culturas, aprender nuevas lenguas y descubrirse. Queremos transformar a jóvenes inculcando la pasión por el estudio continuo, y las habilidades y el conocimiento para prosperar y contribuir a la diversidad cultural. Nuestros participantes valoran los esfuerzos de las familias anfitrionas y la vida en una comunidad ya que están en una edad propicia para adaptarse totalmente a un nuevo país y a su cultura, y lo suficientemente maduros para reflexionar sobre sus vivencias. La educación es esencial en la misión de Travel de aumentar el conocimiento y el entendimiento global.<br></p></div>
+        
+            <div class="titi">
             <p><strong><u>SEGURIDAD:</u></strong> Travel posee un experimentado equipo internacional, nacional, regional y miles de voluntarios en todo el mundo, profesionalmente entrenados, que ayudarán y asesorarán, ya sea cerca de casa o alrededor del mundo. Nada es más importante para nosotros que la seguridad de sus estudiantes de intercambio. Dado que poseemos una red mundial para servirte a ti, a tu familia, escuela y comunidad, podremos ayudarte responder en caso de emergencia. <br><br>
 
-            Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a><br></p>
+            Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a><br></p></div>
         </div>
     </div>
     

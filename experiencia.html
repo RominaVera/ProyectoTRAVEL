@@ -9,41 +9,54 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>ExperienciaII</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlacee">
-            <img src="IMAGENES\logonuevo.png" alt=" "class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="programas.html">Nuestros programas</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav> 
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: rgb(133, 173, 248); position: fixed; width: 100%; z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="IMAGENES/logonuevo.png" alt="Travel"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link list" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link list" href="programas.html">Nuestros programas</a>
+                    <a class="nav-link active list" href="experiencia.html">Experiencias</a>
+                    <a class="nav-link list" href="nosotros.html"> Sobre Nosotros</a>
+                    <a class="nav-link list" href="contacto.html"> Contactos</a>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+    
     <main>
     
-        <div class="slider">
-            <ul>
-                <li><img src="IMAGENES\nepal.jpg" alt="fiesta" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\mexico1.jpg" alt="risas" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\moscu.jpg" alt="espuma" width="100%" height="450px"></li>
-                <li><img src="IMAGENES\madrid.jpg" alt="festejo" width="100%" height="450px"></li>
-            </ul>
-        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide posit" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMAGENES/nepal.jpg" class="d-block w-100" alt="Nepal">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/mexico1.jpg" class="d-block w-100" alt="México">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/moscu1.jpg" class="d-block w-100" alt="Moscú">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/madrid3.jpg" class="d-block w-100" alt="Madrid">
+                </div>
+            </div>
+        </div><br>
+        
         <section>
             <article class="titulo-estefi">
-            <h1 class="efectos">
+            <h1 class="efectos center">
                 Una Aventura que te cambiará la vida
             </h1><br>
-            <h4>
+            <h4 class="center">
                 TRAVEL promueve el entendimiento intercultural, la responsabilidad social a través de intercambios 
                 educativos <br> que transforman generaciones de jóvenes y familias, que son respaldadas por voluntarios.
             </h4>
@@ -66,7 +79,7 @@
                             !Hola! Me llamo Mica, soy de Buenos Aires y estoy en España realizando un intercambio, por 1 año. 
                             Desde pequeña siempre tuve el sueño de descubrir el mundo, y siempre tuve la idea de realizar un intercambio.
                             El año pasado me gane una beca, y gracias a esa beca hoy estoy aca, disfrutando de Madrid. <br>
-                            #travelargentina #intercamboxelmundo #experienciasunicas
+                            #travelargentina #intercambioxelmundo #experienciasunicas
                             </p>
                         </figcaption>
                     </figure>
@@ -83,7 +96,7 @@
                                 !Hola! Soy Naty, de Santa Fé , tengo 23 años y desde Enero 22 estoy viviendo en México. 
                                 Por mucho tiempo tuve el deseo de realizar un intercambio y experimentar una cultura diferente a la mía. Después de las idas y vueltas (se traduce a: pandemia) se presentó la oportunidad, y pensé: “finalmente lo estoy cumpliendo, entonces hagámoslo valer la pena! 😂” es por esto que decidí viajar a México. 
                                 Quería interiorizar una verdadera diferencia cultural sobre un país del cual no sabía casi nada.
-                                <br>#travelargentina #intercamboxelmundo #experienciasunicas
+                                <br>#travelargentina #intercambioxelmundo #experienciasunicas
                             </p>
                         </figcaption>
                     </figure>
@@ -101,7 +114,7 @@
                                 Soy beneficiario de la beca Martha Bigliani 2020. Por la situacion de pandemia se tuvo que postergar mi viaje un año y tambien se cambio mi destino; de Vietnam originalmente termine en Rusia.
                                 Siempre quise hacer un intercambio y un día encontré a TRAVEL en las redes sociales y me interesó mucho. Me postulé en la beca y afortunadamente me seleccionaron beneficiario. Durante la pandemia empecé a ser voluntario y finalmente en Junio del 2022 pude viajar a este hermoso país. 
                                 Como habrán hecho las cuentas ya llevo casi 2 meses acá y esta semana les voy a estar contando acerca de este país, su cultura y algunas cosas que he vivido.
-                                <br>#travelargentina #intercamboxelmundo #experienciasunicas
+                                <br>#travelargentina #intercambioxelmundo #experienciasunicas
                             </p>
                         </figcaption>
                     </figure>
@@ -119,41 +132,39 @@
                                 Les resumo cómo llegue hasta acá: Todo empezó cuando una amiga, que también está de intercambio (@er453muk gracias x la idea❤️) me contó sobre Travel y lo que ella iba a hacer. 
                                 Me entro la curiosidad, ni lo dudé y comencé con los trámites. Tenía muchas ganas de cambiar de aires, de buscar lugares, relaciones nuevas y sobre todo crecer.
                                 Me gusto muchísimo la idea y el concepto de hacer un intercambio y es por eso que estuve siempre firme con mi decisión.
-                                <br>#travelargentina #intercamboxelmundo #experienciasunicas
+                                <br>#travelargentina #intercambioxelmundo #experienciasunicas
                             </p>
                         </figcaption>
                     </figure>
                 </a>
             </div>
         </section>
-
-        <div class="data"><h2 class="tit1">Datos de interés de nuestros destinos favoritos</h2><br>
+        <h2 class="tit1">Datos de interés de nuestros destinos favoritos</h2><br>
+        <div class="data">
             <div class="data1"><p class="ipt1" id="mexico"></p></div>
             <div class="data1"><p class="ipt1" id="madrid"></p></div>
             <div class="data1"><p class="ipt1" id="moscu"></p></div>
             <div class="data1"><p class="ipt1" id="nepal"></p></div>
         </div>
 
-        <!-- Aquí comienza el formulario interactivo-->
-        
         <div class="opciones">
             <h2 class="tit1">¿Te interesa descubrir cuál es el destino que se acerca a tus gustos?</h2>
             <h2 class="tit1"> Podes responder las siguientes preguntas y te asesoramos</p></h2>
             <form name="myForm">
                 <div class="data2"><p class="parraf">¿En qué lugar preferis vacacionar?</p>
-                    <label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="playa" value= "1" required/>Playa</label>
-                    <label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="montana" value= "2" />Montaña</label>
-                    <label class="ipt1"  for="lugar"><input  type="radio" name="lugar" id="bosque" value= "3" />Bosque</label>
+                    <div class="data22"><label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="playa" value= "1" required/>Playa</label></div>
+                    <div class="data22"><label class="ipt1" for="lugar"><input  type="radio" name="lugar" id="montana" value= "2" />Montaña</label></div>
+                    <div class="data22"><label class="ipt1"  for="lugar"><input  type="radio" name="lugar" id="bosque" value= "3" />Bosque</label></div>
                 </div>
                 <div class="data2"><p class="parraf">Salir de vacaciones con ...</p>
-                    <label class="ipt1"  for="compania"><input type="radio" name="compania" id="amigos" value= "1" />Amigos</label>
-                    <label class="ipt1" for="compania"><input type="radio" name="compania" id="pareja" value= "2" />Pareja</label>
-                    <label class="ipt1" for="compania"><input type="radio" name="compania" id="familia" value= "3" />Familia</label>
+                    <div class="data22"><label class="ipt1"  for="compania"><input type="radio" name="compania" id="amigos" value= "1" required />Amigos</label></div>
+                    <div class="data22"><label class="ipt1" for="compania"><input type="radio" name="compania" id="pareja" value= "2" />Pareja</label></div>
+                    <div class="data22"><label class="ipt1" for="compania"><input type="radio" name="compania" id="familia" value= "3" />Familia</label></div>
                 </div>
                 <div class="data2"><p class="parraf">¿Cómo te gusta divertirte?</p>
-                    <label class="ipt1" for="diversion"><input type="radio" name= "diversion" id="bailar" value= "1" />Salir a bailar</label>
-                    <label class="ipt1" for="diversion"><input type="radio" name="diversion" id="cenar" value= "2" />Salir a cenar</label>
-                    <label class="ipt1" for="diversion"><input type="radio" name="diversion" id="reunion" value= "3" />Reunión con amigos</label>
+                    <div class="data22"><label class="ipt1" for="diversion"><input type="radio" name= "diversion" id="bailar" value= "1" required/>Salir a bailar</label></div>
+                    <div class="data22"><label class="ipt1" for="diversion"><input type="radio" name="diversion" id="cenar" value= "2" />Salir a cenar</label></div>
+                    <div class="data22"><label class="ipt1" for="diversion"><input type="radio" name="diversion" id="reunion" value= "3" />Reunión con amigos</label></div>
                 </div>
             </form>
         
@@ -167,21 +178,21 @@
         <div><h2 class="tit1">A continuación te calculamos, según tus preferencias, cuánto te costaría tu viaje de intercambio!</h2>
             <form name="myForms">
                 <div class="data3"><p class="parraf">Indica cuál es tu ciudad preferida:</p>
-                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="mexico" value= "1" />México</label>
-                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="madrid" value= "2" />Madrid</label>
-                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="moscu" value= "3" />Moscú</label>
-                    <label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="nepal" value= "4" />Nepal</label>
+                    <div class="data33"><label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="mexico" value= "1" />México</label></div>
+                    <div class="data33"><label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="madrid" value= "2" />Madrid</label></div>
+                    <div class="data33"><label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="moscu" value= "3" />Moscú</label></div>
+                    <div class="data33"><label class="ipt1" for="ciudadPreferida"><input type="radio" name="ciudadPreferida" id="nepal" value= "4" />Nepal</label></div>
                 </div>
-                <div class="data3"><p class="parraf">Elige el tiempo de estadía:</p><br>
-                    <label class="label" for="tiempoEstadia"></label>
+                <div class="data3"><p class="parraf">Elige el tiempo de estadía:</p>
+                    <div class="data33"><label class="label" for="tiempoEstadia"></label></div>
                     <input class="input" type="number" name="tiempoEstadia" placeholder="Tiempo de estadía (en meses)" id="tEstadia" min="1" max="24">
                 </div>
-                <div class="data3"><p class="parraf">Selecciona una financiación:</p>
+                <div class="data3"><p class="parraf">Selecciona una financiación (cuotas):</p>
                     
-                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="tresCuotas" value= "3" required />En 3 cuotas sin interés</label>
-                    <label class="ipt1"  for="formaDePago"><input type="radio" name="formaDePago" id="seisCuotas" value= "6" />En 6 cuotas con el 20% de recargo</label>
-                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="doceCuotas" value= "12" />En 12 cuotas con el 40% de recargo</label>
-                    <label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="veinticuatroCuotas" value= "24" />En 24 cuotas con el 80% de recargo</label>
+                    <div class="data33"><label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="tresCuotas" value= "3" required />3 (sin interés)</label></div>
+                    <div class="data33"><label class="ipt1"  for="formaDePago"><input type="radio" name="formaDePago" id="seisCuotas" value= "6" />6 (20% recargo)</label></div>
+                    <div class="data33"><label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="doceCuotas" value= "12" />12 (40% recargo)</label></div>
+                    <div class="data33"><label class="ipt1" for="formaDePago"><input type="radio" name="formaDePago" id="veinticuatroCuotas" value= "24" />24 (80% recargo)</label></div>
                     
                 </div>
             </form>
@@ -205,8 +216,6 @@
                 </div><br>
 
             <div id="presupuestoPosible1"><p class="parraf"></p></div><br>
-
-<!-- Hasta acá el formulario interactivo-->
 
     </main>
     <footer class="footer">

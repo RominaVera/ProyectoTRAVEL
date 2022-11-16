@@ -9,92 +9,104 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="CSS\styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Programas de Travel</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="#" class="enlacee">
-            <img src="IMAGENES\logonuevo.png" alt=" "class="logo">
-        </a>
-        <ul>
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="programas.html">Nuestros programas</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="nosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav> 
+    <nav class="navbar navbar-light navbar-expand-lg" style="background-color: rgb(133, 173, 248); position: fixed; width: 100%; z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="IMAGENES/logonuevo.png" alt="Travel"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link list" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active list" href="programas.html">Nuestros programas</a>
+                    <a class="nav-link list" href="experiencia.html">Experiencias</a>
+                    <a class="nav-link list" href="nosotros.html"> Sobre Nosotros</a>
+                    <a class="nav-link list" href="contacto.html"> Contactos</a>
+                </div>
+            </div>
+        </div>
+    </nav><br><br>
+    
     <main class="main">
         
+        <div id="carouselExampleSlidesOnly" class="carousel slide posit" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMAGENES/estudiantes2.jpg" class="d-block w-100" alt="Estudiantes de Travel">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/voluntario1.jpg" class="d-block w-100" alt="Voluntarios">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/estudiantes5.jpg" class="d-block w-100" alt="Estudiantes de Travel">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMAGENES/voluntario2.jpg" class="d-block w-100" alt="Festejo">
+                </div>
+            </div>
+        </div><br>
+        
         <h1 class="efectos">Nuestros programas</h1>
-        <div class="slider1">
-            <ul>
-                <li><img src="IMAGENES\estudiantes1.jpg" alt="Estudiantes de Travel" width=100% height=450px></li>
-                <li><img src="IMAGENES\voluntario1.jpg" alt="Voluntarios" width=100% height=450px></li>
-                <li><img src="IMAGENES\estudiantes5.jpg" alt="Estudiantes de Travel" width=100% height=450px></li>
-                <li><img src="IMAGENES\voluntario2.jpg" alt="Voluntarios" width=100% height=450px></li>
-                
-            </ul>
-        </div><br><br>
+
         <div class="text1">
-        <h2 class="tit">Programas de intercambio estudiantil</h2><br>
-            <p>El programa de intercambio fue diseñado para jóvenes estudiantes, que estén interesados en conocer una cultura diferente, integrándose a una familia anfitriona como un hijo más, compartiendo su cultura, sus inquietudes y alegrías. Es esencial que el estudiante esté predispuesto a abrirse a esta nueva experiencia, a integrarse y aceptar las diferencias culturales tanto de su familia como de su país anfitrión, sus costumbres, religiones, normas sociales, idioma, etc. Todo esto, no sólo le brindará al estudiante un amplio conocimiento de la nueva cultura, sino que le ayudará a crecer y desarrollarse personalmente. En estos programas vivís con una familia que te aloja y te asume como a un hijo más, con los mismos deberes y derechos que los demás miembros. Durante ese período, seguís los cursos, en forma regular, de una escuela secundaria. Así tenés la oportunidad de conocer la cultura como la viven los locales, sus costumbres, de conocer el sistema escolar y, por supuesto, de aprender el idioma elegido. <br>
+            <div class="titi">
+                <h2 class="tit2">Programas de intercambio estudiantil</h2><br>
+                <p>El programa de intercambio fue diseñado para jóvenes estudiantes, que estén interesados en conocer una cultura diferente, integrándose a una familia anfitriona como un hijo más, compartiendo su cultura, sus inquietudes y alegrías. Es esencial que el estudiante esté predispuesto a abrirse a esta nueva experiencia, a integrarse y aceptar las diferencias culturales tanto de su familia como de su país anfitrión, sus costumbres, religiones, normas sociales, idioma, etc. Todo esto, no sólo le brindará al estudiante un amplio conocimiento de la nueva cultura, sino que le ayudará a crecer y desarrollarse personalmente. En estos programas vivís con una familia que te aloja y te asume como a un hijo más, con los mismos deberes y derechos que los demás miembros. Durante ese período, seguís los cursos, en forma regular, de una escuela secundaria. Así tenés la oportunidad de conocer la cultura como la viven los locales, sus costumbres, de conocer el sistema escolar y, por supuesto, de aprender el idioma elegido. <br>
             
-            DURACIÓN: 2 a 8 semanas, un trimestre académico, un semestre académico o un año académico.
-            EDAD: Entre 15 y 18.5 años de edad, en el momento de la partida.
-            FECHAS DE INICIO: Enero o julio/agosto.
-            FECHA LIMITE DE INSCRIPCIÓN: 5 meses antes de la partida.
-            REQUISITOS DE IDIOMAS: Conocimiento del idioma para algunos países. <br>
-            Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a>
-            </p>
-        </div>
-        <div class="text1">
-            <h2 class="tit">Programas para voluntarios (mayores de 18 años)</h2><br>
-            <p>Lo que hace especial a Travel son las personas que están conectadas con nosotros. Los voluntarios son el corazón de nuestra organización. Son el vínculo entre estudiantes, familias, escuelas y la red Travel. Gracias a su compromiso, Travel puede ofrecer una red de atención sostenible en todo el mundo. Si vos también querés formar parte de esta red y cambiar el mundo poco a poco con nosotros, ¡sumate! <br>
-            Los voluntarios son la base de nuestra organización. Por el trabajo y el esfuerzo que realizan, hay cientos de estudiantes que están agradecidos.
-            Lo más importante en un voluntario es el afecto a la organización, su experiencia y sobre todo su sentido solidario de brindar ayuda a otros. Eso es difícil de describir. Lo que sí podemos contarles es que hemos visto infinidades de sonrisas en voluntarios felices de participar de las actividades de Travel, luego de su regreso a Argentina.
-            El rol del voluntario es fundamental para el éxito de nuestra tarea. Sólo podemos cumplir los objetivos de crear comprensión entre los pueblos del mundo si hay individuos como ustedes que estén dispuestos a poner su energía y su trabajo para lograr este fin. <br>
-            Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a><br><br>
-            </p>
-        </div><br><br><br>
+                DURACIÓN: 2 a 8 semanas, un trimestre académico, un semestre académico o un año académico.
+                EDAD: Entre 15 y 18.5 años de edad, en el momento de la partida.
+                FECHAS DE INICIO: Enero o julio/agosto.
+                FECHA LIMITE DE INSCRIPCIÓN: 5 meses antes de la partida.
+                REQUISITOS DE IDIOMAS: Conocimiento del idioma para algunos países. <br>
+                Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a>
+                </p>
+            </div>
+        
+            <div class="titi">
+                <h2 class="tit2">Programas para voluntarios (mayores de 18 años)</h2><br>
+                <p>Lo que hace especial a Travel son las personas que están conectadas con nosotros. Los voluntarios son el corazón de nuestra organización. Son el vínculo entre estudiantes, familias, escuelas y la red Travel. Gracias a su compromiso, Travel puede ofrecer una red de atención sostenible en todo el mundo. Si vos también querés formar parte de esta red y cambiar el mundo poco a poco con nosotros, ¡sumate! <br>
+                Los voluntarios son la base de nuestra organización. Por el trabajo y el esfuerzo que realizan, hay cientos de estudiantes que están agradecidos.
+                Lo más importante en un voluntario es el afecto a la organización, su experiencia y sobre todo su sentido solidario de brindar ayuda a otros. Eso es difícil de describir. Lo que sí podemos contarles es que hemos visto infinidades de sonrisas en voluntarios felices de participar de las actividades de Travel, luego de su regreso a Argentina.
+                El rol del voluntario es fundamental para el éxito de nuestra tarea. Sólo podemos cumplir los objetivos de crear comprensión entre los pueblos del mundo si hay individuos como ustedes que estén dispuestos a poner su energía y su trabajo para lograr este fin. <br>
+                Para obtener más información, haga <a href="https://travelviajes.com.ar/" class="ahref"><strong>CLICK AQUÍ</strong></a><br><br>
+                </p>
+            </div>
+        </div><br>
         <center>
         <div class="text3">
-            <p class="tit">¿Quiere saber cuál es el programa más adecuado para Ud?</p>
-            <p class="tit">Ingrese sus datos en el siguiente formulario y lo asesoraremos!</p>
+            <p class="tit3">¿Quiere saber cuál es el programa más adecuado para Ud?</p>
+            <p class="tit3">Ingrese sus datos en el siguiente formulario y lo asesoraremos!</p>
         
             <div class="datos">
                 
-                    <div class="titulos" ><p>Nombre y Apellido</p><br>
-                        <!-- <label class="label" for="nombre y apellido">Nombre y Apellido</label> -->
+                    <div class="titulos" ><p>Nombre y Apellido</p>
                         <input id="nomyap"class="input" type="text" name="nombre y apellido" required>
                     </div><br>
 
-                    <div class="titulos"><p>Edad</p><br>
-                        <!-- <label class="label" for="edad">Edad</label> -->
+                    <div class="titulos"><p>Edad</p>
                         <input class="input" type="number" name="edad" min="1" max="100" required>
                     </div><br>
                 
-                    <div class="titulos"><p>Ciudad de Residencia</p><br>
-                        <!-- <label class="label" for="ciudad">Ciudad</label> -->
+                    <div class="titulos"><p>Ciudad</p>
                         <input class="input" type="text" name="ciudad" required>
                     </div><br>
                 
-                    <div class="titulos"><p>País</p><br>
-                        <!-- <label class="label" for="pais">País</label> -->
+                    <div class="titulos"><p>País</p>
                         <input class="input" type="text" name="pais" required>
                     </div><br>
-
+            </div>
                     <div class="boton">
                         <button onclick="datosPersonales()" class="envia">Recibir asesoramiento</button>
                     </div><br>
                     
-                    <div id="respuesta"></div><br>
-                    <div id="asesoramiento"></div><br>
-            </div>
+                    <div id="respuesta"></div>
+                    <div id="asesoramiento"></div>
+            
         </div>
     </center>
     </main>
